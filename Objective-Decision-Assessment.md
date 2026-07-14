@@ -1,5 +1,3 @@
-# Objective-Decision-Assessment.md
-
 # RedCap-01 Objective-to-Decision Assessment
 
 **Assessment ID:** ______________________
@@ -287,4 +285,4 @@ Final decisions remain the responsibility of management and the governing body.
 
 **RedCap-01**
 Objective-to-Risk Alignment Check
-Part of the GRCnext™ ecosystem.
+Part of the GRC next™ ecosystem.

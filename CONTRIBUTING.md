@@ -23,25 +23,22 @@ Contributions should be:
 
 ## Preferred contributions
 
-Examples
-
-Templates
-
-Worked assessments
-
-Editorial improvements
-
-Research references
-
-Implementation experience
+- Examples
+- Templates
+- Worked assessments
+- Editorial improvements
+- Research references
+- Implementation experience
 
 ## Please avoid
 
-- duplicating existing GRCnext™ repositories
+- duplicating existing GRC next™ repositories
 - unnecessary complexity
 - unsupported claims
 - excessive scoring systems
 - documentation for its own sake
+
+Note that `RedCap-01-Custom-GPT.md` mirrors the deployed Custom GPT verbatim. Proposed changes to the instruction block are welcome as suggestions but are merged only together with a production update.
 
 ## Pull requests
 
@@ -54,4 +51,4 @@ Please explain:
 
 ## Attribution
 
-By contributing, you confirm you have the right to contribute your work and agree that it may be distributed under the repository's license.
+By contributing, you confirm you have the right to contribute your work and agree that it may be distributed under the repository's license (CC BY-NC-SA 4.0, see [`LICENSE.md`](LICENSE.md)).

@@ -1,8 +1,8 @@
-# DOCTRINE.md
-
 # RedCap-01 Doctrine
 
-**Version:** 1.0.0
+**Version:** 1.1.0
+
+**Date:** 14 July 2026
 
 **Repository:** RedCap-01
 
@@ -122,7 +122,7 @@ RedCap-01 will remain:
 - auditable
 - conservative about uncertainty
 - lightweight
-- complementary to the GRCnext™ ecosystem
+- complementary to the GRC next™ ecosystem
 
 Future versions should strengthen these characteristics rather than expand the repository's scope.
 
@@ -132,8 +132,8 @@ Future versions should strengthen these characteristics rather than expand the r
 
 RedCap-01 complements, but does not replace:
 
-- **GRC Workbook**, which provides a comprehensive Governance, Risk Management and Compliance implementation method.
-- **Risk-Informed Decision Making and Continuous Risk Management**, which structures individual decisions under uncertainty.
+- **grc-workbook**, which provides a comprehensive governance, risk management and compliance implementation method.
+- **risk-informed-decision-making-prompt** (Risk-Informed Decision Making and Continuous Risk Management), which structures individual decisions under uncertainty.
 - **RedCap-00**, which evaluates operational optionality under disruption.
 
 RedCap-01 contributes one capability:
@@ -152,7 +152,7 @@ Ryan Luttenton, Stefany Samp and Alexa Stone,
 
 Committee of Sponsoring Organizations of the Treadway Commission (COSO), 2026.
 
-It operationalizes these ideas within the GRCnext™ ecosystem while remaining an independent method.
+It operationalizes these ideas within the GRC next™ ecosystem while remaining an independent method.
 
 ---
 

@@ -1,5 +1,3 @@
-# Example-Assessment.md
-
 # RedCap-01 Example Assessment
 
 > This fictional example illustrates the RedCap-01 method. It is not based on any real organization.

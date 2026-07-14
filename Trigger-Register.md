@@ -1,5 +1,3 @@
-# Trigger-Register.md
-
 # RedCap-01 Trigger Register
 
 A Trigger Register translates uncertainty into observable events that require reassessment or action.

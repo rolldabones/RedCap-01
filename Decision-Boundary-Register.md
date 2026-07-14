@@ -1,5 +1,3 @@
-# Decision-Boundary-Register.md
-
 # RedCap-01 Decision Boundary Register
 
 Decision boundaries operationalize risk appetite.

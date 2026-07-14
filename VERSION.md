@@ -1,26 +1,30 @@
 # VERSION
 
-Repository: RedCap-01
+**Repository:** RedCap-01
 
-Method:
-Objective-to-Risk Alignment Check
+**Method:** Objective-to-Risk Alignment Check
 
-Current Version:
-1.0.0
+**Current version:** 1.1.0
 
-Status:
-Initial Public Release
+**Date:** 14 July 2026
 
-Compatibility:
+**Status:** Production release, mirrored to the deployed RedCap-01 Custom GPT
 
-- GRC Workbook
-- Risk-Informed Decision Making and Continuous Risk Management
+**Versioning rule:** README.md, BUILD.md, DOCTRINE.md, VERSION.md and RedCap-01-Custom-GPT.md move in lockstep. Prior versions are superseded, never silently overwritten; every change is logged in CHANGELOG.md.
+
+**Compatibility:**
+
+- grc-workbook
+- risk-informed-decision-making-prompt
 - RedCap-00
 
-Next Planned Enhancements (non-breaking)
+**Next planned enhancements (non-breaking):**
 
 - Additional worked examples
 - Optional board reporting template
 - Additional assessment patterns
 - Community feedback integration
 
+---
+
+**Final Liability rests with the Human.**

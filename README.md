@@ -2,13 +2,15 @@
 
 **Objective-to-Risk Alignment Check**
 
-A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution.
+**Version 1.1.0 · 14 July 2026 · Part of GRC next™**
+
+A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. RedCap-01 is deployed as a Custom GPT; this repository mirrors the production deployment verbatim.
 
 > **Governing question:** Does our Enterprise Risk Management improve the decisions that determine whether we achieve our objectives?
 
 ## What this is
 
-RedCap-01 is a practical self-assessment and advisory tool within the GRCnext™ ecosystem.
+RedCap-01 is a practical self-assessment and advisory tool within the **GRC next™** ecosystem.
 
 It tests whether an organization's ERM:
 
@@ -21,7 +23,7 @@ It tests whether an organization's ERM:
 - operates inside existing planning, investment and performance rhythms
 - demonstrates value through decisions influenced, pivots enabled, opportunities supported and surprises reduced
 
-RedCap-01 is deliberately narrow. It does not attempt to replace an ERM framework, redesign an entire Governance, Risk Management and Compliance (GRC) program or decide a specific business issue for management.
+RedCap-01 is deliberately narrow. It does not attempt to replace an ERM framework, redesign an entire governance, risk management and compliance program or decide a specific business issue for management.
 
 ## Why it exists
 
@@ -32,6 +34,10 @@ The practical test is whether risk information reaches decision-makers while mea
 RedCap-01 was inspired by the Committee of Sponsoring Organizations of the Treadway Commission (COSO) paper *From Guidance to Action: Exploring Practical Enterprise Risk Management* (2026). The paper emphasizes that strategy and risk are inseparable, ERM should create and protect value, risk information should be decision-useful and ERM should be embedded into the operating rhythms where choices are made.
 
 RedCap-01 converts that practical orientation into a bounded diagnostic.
+
+## Regulatory and standards currency
+
+Verified 14 July 2026. *From Guidance to Action* was released by COSO on 4 May 2026 and is COSO's current supplemental ERM guidance; the COSO Enterprise Risk Management framework (2017) remains the framework of record. This repository cites COSO, ISO 31000, ISO/IEC 42001, the NIST AI Risk Management Framework and OCEG as references only. It makes no conformance, alignment or certification claim against any of them. Verify current status before relying on any framework reference.
 
 ## The assessment
 
@@ -99,7 +105,7 @@ RedCap-01 examines eight connected capabilities.
 RedCap-01 uses a qualitative scale unless the user expressly requests another method:
 
 | Rating | Meaning |
-|---|---|
+| --- | --- |
 | **Excellent** | The capability is embedded, decision-useful, owned and supported by current evidence. |
 | **Strong** | The capability is generally effective, with limited gaps that do not materially impair decision use. |
 | **Developing** | Important elements exist, but use is inconsistent, incomplete or weakly evidenced. |
@@ -207,83 +213,64 @@ The tool will help translate the objective into:
 - review cadence
 - evidence of value
 
-## Relationship to the GRCnext™ ecosystem
+## The deployed Custom GPT
 
-RedCap-01 complements existing repositories. It does not replace them.
-
-### [GRC Workbook](https://github.com/rolldabones/grc-workbook)
-
-The GRC Workbook provides a broader method for building and improving an integrated governance, risk management and compliance capability.
-
-**It answers:** How do we build and operate a practical GRC capability?
-
-RedCap-01 can be used as a focused diagnostic within that broader work to test whether ERM remains anchored to objectives and decisions.
-
-### [Risk-Informed Decision Making and Continuous Risk Management](https://github.com/rolldabones/risk-informed-decision-making-prompt)
-
-This repository provides a structured method for analyzing a specific decision under uncertainty and maintaining risk management after the initial choice.
-
-**It answers:** How should we analyze and govern this decision?
-
-RedCap-01 operates one level above the individual decision. It tests whether the ERM system consistently identifies and improves the decisions that matter to organizational objectives.
-
-### [RedCap-00](https://github.com/rolldabones/RedCap-00)
-
-RedCap-00 tests whether an organization can execute five critical operational moves within 72 hours under disruption.
-
-**It answers:** Can we execute meaningful options under stress?
-
-RedCap-01 tests the upstream connection between objectives, risk and decisions.
-
-**It answers:** Does ERM improve the decisions that determine whether objectives are achieved?
-
-### Complementary use
-
-| Repository | Governing question |
-|---|---|
-| **GRC Workbook** | How do we build and operate an effective GRC capability? |
-| **Risk-Informed Decision Making** | How should we analyze and govern this decision? |
-| **RedCap-00** | Can we execute meaningful operational options under stress? |
-| **RedCap-01** | Does ERM improve the decisions that determine whether objectives are achieved? |
-
-## Build guide
-
-The repository includes a build guide for creating the RedCap-01 Custom GPT.
-
-The intended configuration is:
+RedCap-01 is live as a Custom GPT. The production configuration, mirrored verbatim in this repository, is:
 
 - **Name:** RedCap-01
-- **Description:** Tests whether Enterprise Risk Management is anchored to objectives, decisions and operational execution.
-- **Instructions:** Use the finalized prompt in `prompts/RedCap-01-Custom-GPT.md`.
-- **Knowledge:** Upload a lawfully obtained copy of *From Guidance to Action: Exploring Practical Enterprise Risk Management* and any internal, appropriately redacted materials the user wants assessed.
-- **Capabilities:** Enable only the capabilities needed for the intended deployment.
-- **Conversation starters:**
-  - Test whether our ERM is linked to our strategic objectives.
-  - Review this objective and identify the decisions, assumptions, boundaries and triggers that matter.
-  - Assess whether our risk appetite is usable in real decisions.
-  - Convert this ERM report into a decision-useful executive brief.
-  - Identify where our ERM process is producing activity rather than decision value.
+- **Description:** An evidence-oriented Enterprise Risk Management (ERM) assessment assistant within the GRCnext™ ecosystem
+- **Instructions:** the block in [`RedCap-01-Custom-GPT.md`](RedCap-01-Custom-GPT.md), reproduced exactly as deployed
+- **Knowledge:** a lawfully obtained copy of *From Guidance to Action: Exploring Practical Enterprise Risk Management* plus any internal, appropriately redacted materials the user wants assessed
+- **Conversation starters:** none configured
+- **Capabilities enabled:** Web Search, Canvas, Image Generation, Code Interpreter & Data Analysis
+
+Example prompts to try:
+
+- Test whether our ERM is linked to our strategic objectives.
+- Review this objective and identify the decisions, assumptions, boundaries and triggers that matter.
+- Assess whether our risk appetite is usable in real decisions.
+- Convert this ERM report into a decision-useful executive brief.
+- Identify where our ERM process is producing activity rather than decision value.
 
 See [`BUILD.md`](BUILD.md) for the design rationale, configuration steps, testing approach and limitations.
 
+## Part of the ecosystem
+
+This repository is one tool in a connected set. The canonical map is [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) in the profile repository. Nearest neighbors:
+
+- [grc](https://github.com/rolldabones/grc): the **GRC next** framework whose primitives (Services, Tolerances, Pipes, Switches, Exits) sit beneath this tool's boundaries, triggers and ownership tests
+- [grc-workbook](https://github.com/rolldabones/grc-workbook): the workbook instrument for building and operating an integrated governance, risk management and compliance capability, within which RedCap-01 serves as a focused ERM diagnostic
+- [risk-informed-decision-making-prompt](https://github.com/rolldabones/risk-informed-decision-making-prompt): structures a single decision under uncertainty; RedCap-01 operates one level above, testing whether the ERM system consistently reaches the decisions that matter
+- [RedCap-00](https://github.com/rolldabones/RedCap-00): tests whether an organization can execute five critical operational moves within 72 hours under disruption; RedCap-01 tests the upstream link between objectives, risk and decisions
+- [AI-Impact-Assessment-Tool](https://github.com/rolldabones/AI-Impact-Assessment-Tool): the companion assessment gate for AI system deployment, built and versioned on the same production-mirror discipline
+
+Governing questions across the set:
+
+| Repository | Governing question |
+| --- | --- |
+| **grc-workbook** | How do we build and operate an effective GRC capability? |
+| **risk-informed-decision-making-prompt** | How should we analyze and govern this decision? |
+| **RedCap-00** | Can we execute meaningful operational options under stress? |
+| **RedCap-01** | Does ERM improve the decisions that determine whether objectives are achieved? |
+
 ## Repository structure
 
-```text
+The repository is intentionally flat.
+
+```
 RedCap-01/
-├── README.md
-├── BUILD.md
-├── CHANGELOG.md
-├── VERSION.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── prompts/
-│   └── RedCap-01-Custom-GPT.md
-├── templates/
-│   ├── Objective-Decision-Assessment.md
-│   ├── Trigger-Register.md
-│   └── Decision-Boundary-Register.md
-└── examples/
-    └── Example-Assessment.md
+├── README.md                          Overview, method and deployed configuration
+├── BUILD.md                           Design rationale, configuration steps, testing, limitations
+├── RedCap-01-Custom-GPT.md            Production instruction block, mirrored verbatim
+├── DOCTRINE.md                        The ten principles behind the method
+├── Objective-Decision-Assessment.md   Full assessment template
+├── Decision-Boundary-Register.md      Decision boundary register template
+├── Trigger-Register.md                Trigger register template
+├── Example-Assessment.md              Fictional worked example
+├── CHANGELOG.md                       Version history
+├── VERSION.md                         Current version and compatibility
+├── CONTRIBUTING.md                    Contribution guidance
+└── LICENSE.md                         CC BY-NC-SA 4.0
 ```
 
 ## Important limitations
@@ -300,27 +287,25 @@ RedCap-01 is:
 
 Jurisdiction, regulatory obligations and authoritative requirements remain unknown unless supplied and verified.
 
-**Final Liability rests with the Human.**
-
 ## Design commitments
 
 RedCap-01 is designed to remain:
 
-- **objective-first**
-- **decision-led**
-- **evidence-oriented**
-- **conservative about uncertainty**
-- **lightweight**
-- **usable under real constraints**
-- **clear about ownership**
-- **focused on observable value**
-- **complementary to existing GRCnext™ methods**
+- objective-first
+- decision-led
+- evidence-oriented
+- conservative about uncertainty
+- lightweight
+- usable under real constraints
+- clear about ownership
+- focused on observable value
+- complementary to existing **GRC next™** methods
 
 It should not become a general ERM encyclopedia, a documentation generator or a substitute for the broader repositories to which it connects.
 
 ## Reference and attribution
 
-RedCap-01 is an independent GRCnext™ tool inspired by:
+RedCap-01 is an independent GRC next™ tool inspired by:
 
 Ryan Luttenton, Stefany Samp and Alexa Stone, *From Guidance to Action: Exploring Practical Enterprise Risk Management*, Committee of Sponsoring Organizations of the Treadway Commission, 2026.
 
@@ -335,13 +320,18 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 0.1.0  
-**Status:** Initial public draft  
-**Method:** Objective-to-Risk Alignment Check  
-**Ecosystem:** GRCnext™
+**Version:** 1.1.0
+**Date:** 14 July 2026
+**Status:** Production release, mirrored to the deployed Custom GPT
+**Method:** Objective-to-Risk Alignment Check
+**Ecosystem:** GRC next™
 
 ## License
 
-See [`LICENSE`](LICENSE).
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See [`LICENSE.md`](LICENSE.md).
 
-Unless otherwise stated, original repository content is provided under the license included in this repository. Third-party publications, trademarks and referenced materials remain subject to their respective rights and terms.
+Third-party publications, trademarks and referenced materials remain subject to their respective rights and terms.
+
+---
+
+**Final Liability rests with the Human.**
