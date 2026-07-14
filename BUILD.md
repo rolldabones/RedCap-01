@@ -1,11 +1,10 @@
-# BUILD.md
-
 # Building RedCap-01
 
-**Version:** 0.1.0  
-**Status:** Initial Build  
-**Repository:** RedCap-01  
-**Part of:** GRCnext™
+**Version:** 1.1.0
+**Date:** 14 July 2026
+**Status:** Production
+**Repository:** RedCap-01
+**Part of:** GRC next™
 
 ---
 
@@ -59,14 +58,14 @@ Everything in this repository supports answering that question.
 
 ---
 
-## Relationship to GRCnext™
+## Relationship to GRC next™
 
 RedCap-01 complements existing repositories.
 
 | Repository | Primary question |
 |---|---|
-| **GRC Workbook** | How do we build and operate an effective GRC capability? |
-| **Risk-Informed Decision Making** | How should we analyze and govern this decision? |
+| **grc-workbook** | How do we build and operate an effective GRC capability? |
+| **risk-informed-decision-making-prompt** | How should we analyze and govern this decision? |
 | **RedCap-00** | Can we execute meaningful operational options under stress? |
 | **RedCap-01** | Does ERM improve the decisions that determine whether objectives are achieved? |
 
@@ -125,12 +124,13 @@ It asks users to demonstrate:
 
 The repository was developed by:
 
-1. Reviewing the GRCnext™ ecosystem.
+1. Reviewing the GRC next™ ecosystem.
 2. Identifying capability overlap.
 3. Defining one missing capability.
 4. Studying the COSO 2026 guidance.
 5. Designing a bounded diagnostic.
-6. Building a supporting Custom GPT.
+6. Building and deploying the RedCap-01 Custom GPT.
+7. Mirroring the deployed configuration in this repository (v1.1.0).
 
 ---
 
@@ -138,9 +138,7 @@ The repository was developed by:
 
 ### Primary inspiration
 
-Ryan Luttenton  
-Stefany Samp  
-Alexa Stone
+Ryan Luttenton, Stefany Samp and Alexa Stone
 
 *From Guidance to Action: Exploring Practical Enterprise Risk Management*
 
@@ -156,32 +154,52 @@ This publication is copyrighted. RedCap-01 summarizes and operationalizes concep
 - NIST AI Risk Management Framework
 - OCEG Principled Performance
 
+References only. No conformance or alignment claim is made. See the dated regulatory and standards currency note in the README.
+
 ---
 
 ## Building the Custom GPT
 
-### Recommended configuration
+### Production configuration
 
-**Name**
+The deployed RedCap-01 Custom GPT is configured as follows. [`RedCap-01-Custom-GPT.md`](RedCap-01-Custom-GPT.md) mirrors the live instruction block verbatim.
 
-RedCap-01
+| Field | Value |
+|---|---|
+| Name | RedCap-01 |
+| Description | An evidence-oriented Enterprise Risk Management (ERM) assessment assistant within the GRCnext™ ecosystem |
+| Instructions | The block in `RedCap-01-Custom-GPT.md`, pasted exactly |
+| Knowledge | *From Guidance to Action* (lawfully obtained) plus authorized, appropriately redacted internal materials |
+| Conversation starters | None configured |
+| Capabilities | Web Search, Canvas, Image Generation, Code Interpreter & Data Analysis |
 
-**Description**
+### Configuration steps
 
-Objective-to-Risk Alignment Check
+1. Create a new Custom GPT in the GPT builder.
+2. Set the name and description exactly as above.
+3. Paste the instruction block from `RedCap-01-Custom-GPT.md` into the Instructions field. Paste only the block that follows the header divider; do not include this repository's header material.
+4. Upload a lawfully obtained copy of *From Guidance to Action* to Knowledge. Add internal materials only if authorized and appropriately redacted.
+5. Enable the capabilities listed above. Reduce the set if your deployment does not need them; fewer capabilities means a smaller surface.
+6. Leave conversation starters empty to match production, or add your own; they do not change behavior.
+7. Restrict sharing to the intended audience before publishing.
+8. Test before first use (below).
 
-**Knowledge**
+### Testing approach
 
-Upload:
+Before relying on the tool, verify at minimum that it:
 
-- *From Guidance to Action: Exploring Practical Enterprise Risk Management*
-- Relevant internal documentation (appropriately authorized and, where appropriate, redacted)
+- begins with objectives and refuses to begin with a risk list
+- uses the five-rating qualitative scale and declines numerical maturity scores unless requested
+- answers "Unknown" or "Insufficient evidence" when given deliberately incomplete inputs rather than inferring
+- refuses to reproduce text from the uploaded COSO publication
+- separates facts, observations, assumptions, gaps and recommendations in the default report
+- states that ERM value has not been demonstrated when no observable outcomes are provided
 
-**Instructions**
+Run the fictional scenario in [`Example-Assessment.md`](Example-Assessment.md) as a smoke test and compare the shape of the output.
 
-Use:
+### Limitations
 
-`prompts/RedCap-01-Custom-GPT.md`
+The tool inherits every limitation stated in the README: it is not legal advice, not a compliance determination, not an audit opinion and not a certification of ERM effectiveness. Its output quality is bounded by the accuracy, completeness and candor of the inputs. Jurisdiction and regulatory obligations remain unknown unless supplied and verified. Platform behavior can change without notice; retest after significant platform updates.
 
 ---
 
@@ -211,7 +229,7 @@ Potential future enhancements include:
 - structured board reporting
 - objective mapping
 
-Version 1 intentionally excludes those capabilities to preserve a tightly scoped diagnostic.
+The current release intentionally excludes those capabilities to preserve a tightly scoped diagnostic.
 
 ---
 
@@ -231,6 +249,8 @@ Major releases:
 - governance model
 - acceptance criteria
 
+The repository and the deployed Custom GPT version together. A change to the live instruction block requires a repository release in the same cycle, and the reverse.
+
 ---
 
 ## Closing thought
@@ -242,3 +262,5 @@ It does not attempt to solve Enterprise Risk Management.
 It asks one question exceptionally well.
 
 > **Does Enterprise Risk Management improve the decisions that determine whether organizational objectives are achieved?**
+
+**Final Liability rests with the Human.**
