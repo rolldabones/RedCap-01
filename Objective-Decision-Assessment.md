@@ -285,4 +285,4 @@ Final decisions remain the responsibility of management and the governing body.
 
 **RedCap-01**
 Objective-to-Risk Alignment Check
-Part of the GRC next™ ecosystem.
+Part of the GRCnext™ ecosystem.

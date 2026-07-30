@@ -1,10 +1,10 @@
 # Building RedCap-01
 
-**Version:** 1.1.0
-**Date:** 14 July 2026
+**Version:** 1.1.1
+**Date:** 30 July 2026
 **Status:** Production
 **Repository:** RedCap-01
-**Part of:** GRC next™
+**Part of:** GRCnext™
 
 ---
 
@@ -58,7 +58,7 @@ Everything in this repository supports answering that question.
 
 ---
 
-## Relationship to GRC next™
+## Relationship to GRCnext™
 
 RedCap-01 complements existing repositories.
 
@@ -124,7 +124,7 @@ It asks users to demonstrate:
 
 The repository was developed by:
 
-1. Reviewing the GRC next™ ecosystem.
+1. Reviewing the GRCnext™ ecosystem.
 2. Identifying capability overlap.
 3. Defining one missing capability.
 4. Studying the COSO 2026 guidance.

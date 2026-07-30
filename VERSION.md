@@ -4,9 +4,9 @@
 
 **Method:** Objective-to-Risk Alignment Check
 
-**Current version:** 1.1.0
+**Current version:** 1.1.1
 
-**Date:** 14 July 2026
+**Date:** 30 July 2026
 
 **Status:** Production release, mirrored to the deployed RedCap-01 Custom GPT
 

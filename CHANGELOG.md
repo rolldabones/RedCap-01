@@ -4,6 +4,18 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.1.1] - 2026-07-30
+
+### Changed
+- Trademark rendering corrected to the canonical closed-up form GRCnext™. The retired spaced form "GRC next" is withdrawn from repository prose. Thirteen occurrences across README.md, BUILD.md, DOCTRINE.md, CONTRIBUTING.md and Objective-Decision-Assessment.md, plus one unmarked bold occurrence in the README grc neighbor line.
+- This reverses the v1.1.0 decision to standardize repository prose on the spaced form. That decision moved the repository out of alignment with its own production mirror, whose deployed instruction block and deployed Description both read GRCnext™. The prose and the mirror now agree.
+- The explanatory note in RedCap-01-Custom-GPT.md rewritten to record the reversal and to state that no production change is required.
+- README.md, BUILD.md, DOCTRINE.md, VERSION.md and RedCap-01-Custom-GPT.md moved to 1.1.1 in lockstep per the versioning rule in VERSION.md.
+
+### Unchanged
+- The deployed instruction block, byte for byte. It already carried the canonical form.
+- The v1.1.0 entry below, which records the superseded standardization in its original wording. Historical entries are not rewritten.
+
 ## [1.1.0] - 2026-07-14
 
 ### Added

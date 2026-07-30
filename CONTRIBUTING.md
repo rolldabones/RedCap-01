@@ -32,7 +32,7 @@ Contributions should be:
 
 ## Please avoid
 
-- duplicating existing GRC next™ repositories
+- duplicating existing GRCnext™ repositories
 - unnecessary complexity
 - unsupported claims
 - excessive scoring systems

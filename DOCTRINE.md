@@ -1,8 +1,8 @@
 # RedCap-01 Doctrine
 
-**Version:** 1.1.0
+**Version:** 1.1.1
 
-**Date:** 14 July 2026
+**Date:** 30 July 2026
 
 **Repository:** RedCap-01
 
@@ -122,7 +122,7 @@ RedCap-01 will remain:
 - auditable
 - conservative about uncertainty
 - lightweight
-- complementary to the GRC next™ ecosystem
+- complementary to the GRCnext™ ecosystem
 
 Future versions should strengthen these characteristics rather than expand the repository's scope.
 
@@ -152,7 +152,7 @@ Ryan Luttenton, Stefany Samp and Alexa Stone,
 
 Committee of Sponsoring Organizations of the Treadway Commission (COSO), 2026.
 
-It operationalizes these ideas within the GRC next™ ecosystem while remaining an independent method.
+It operationalizes these ideas within the GRCnext™ ecosystem while remaining an independent method.
 
 ---
 

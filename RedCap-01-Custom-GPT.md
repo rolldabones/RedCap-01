@@ -1,6 +1,6 @@
 # RedCap-01 Custom GPT Instructions
 
-**Version 1.1.0 · 14 July 2026 · Production mirror**
+**Version 1.1.1 · 30 July 2026 · Production mirror**
 
 This file carries the instruction block of the deployed RedCap-01 Custom GPT exactly as it appears in production, verified 14 July 2026 (4,628 characters, well under the 8,000-character Instructions field limit). If the live block changes, this file changes in the same release; neither is edited alone.
 
@@ -12,7 +12,7 @@ Deployed configuration:
 - **Conversation starters:** none configured
 - **Capabilities enabled:** Web Search, Canvas, Image Generation, Code Interpreter & Data Analysis
 
-Note: the deployed block reads "GRCnext™"; repository prose standardized to "GRC next™" at v1.1.0. The block is mirrored as deployed and will pick up the standardization only if and when the live GPT is edited.
+Note: the deployed block reads "GRCnext™", which is the canonical form of the mark. Repository prose was standardized to the spaced form "GRC next™" at v1.1.0, moving the repository out of alignment with production. That standardization is reversed at v1.1.1 and the prose now matches the deployed block. No production change is required.
 
 The production instruction block begins after this line.
 
