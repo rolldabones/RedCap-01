@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.1.1 · 30 July 2026 · Part of GRCnext™**
+**Version 1.1.2 · 13 August 2026 · Part of GRCnext™**
 
 A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. RedCap-01 is deployed as a Custom GPT; this repository mirrors the production deployment verbatim.
 
@@ -11,6 +11,8 @@ A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Mana
 ## What this is
 
 RedCap-01 is a practical self-assessment and advisory tool within the **GRCnext™** ecosystem.
+
+**What this instrument is, stated plainly.** This is a **structured self-assessment**. It is not a measurement, a benchmark, an audit, a certification or a rating. Its outputs are the organization's own answers, organized against a defined structure and disciplined by an evidence rule. That structure is what makes the answers comparable over time and arguable in front of a board. It does not make them independent. A score produced here evidences the organization's position; it does not attest to it, and it should never be presented externally as though a third party had.
 
 It tests whether an organization's ERM:
 
