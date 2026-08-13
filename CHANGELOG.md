@@ -4,6 +4,10 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.1.3] - 2026-08-13
+
+Maintenance sweep. A second **Version:** block at README line 325 still read 1.1.1; the masthead had been bumped but this one had not. Found by the class C version-consistency check.
+
 ## [1.1.2] - 2026-08-13
 
 Measurement and standards reframing.
