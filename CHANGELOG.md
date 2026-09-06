@@ -4,6 +4,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.1.4] - 2026-09-06
+
+Citation infrastructure, doctrine citation line and lockstep maintenance. Session C of the September 2026 improvement pack, one patch release per repository across all 21 public repositories.
+
+- **`CITATION.cff` added** in the house form settled at D-C1: no `type` field, `version` and `date-released` in lockstep with the README, `license` as the SPDX identifier for this repository's licence, `abstract` taken from this repository's ECOSYSTEM.md role line rather than newly written.
+- **How to Cite block** aligned to this release and pointing at `CITATION.cff`.
+- Both version occurrences bumped, the masthead and the closing block, per trap 6.
+- All other files in this repository are unchanged byte for byte.
+
 ## [1.1.3] - 2026-08-13
 
 Maintenance sweep. A second **Version:** block at README line 325 still read 1.1.1; the masthead had been bumped but this one had not. Found by the class C version-consistency check.

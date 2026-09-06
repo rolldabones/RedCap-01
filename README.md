@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.1.3 · 13 August 2026 · Part of GRCnext™**
+**Version 1.1.4 · 6 September 2026 · Part of GRCnext™**
 
 A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. RedCap-01 is deployed as a Custom GPT; this repository mirrors the production deployment verbatim.
 
@@ -322,11 +322,17 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.1.3
+**Version:** 1.1.4
 **Date:** 30 July 2026
 **Status:** Production release, mirrored to the deployed Custom GPT
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™
+
+## How to Cite
+
+> Paik, Son-U Michael. *RedCap-01*, v1.1.4. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+
+A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
 ## License
 
