@@ -4,6 +4,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.1.5] - 2026-09-28
+
+Retirement notice for the deployed custom GPT. OpenAI's Custom GPT retirement and migration FAQ, read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on 11 December 2026. On Michael's ruling of 28 September 2026 the GPT is retired on that date and not migrated to a plugin; the instructions stay published so readers can build their own.
+
+- **`README.md`**: retirement notice added under The deployed Custom GPT, and the Status block records the retirement date. The notice cites both OpenAI help articles with the date each was read. The version moved to this release at every occurrence.
+- **`CITATION.cff`**: `version` and `date-released` in lockstep.
+- **The present-tense deployment wording is kept.** It is true until 11 December 2026. Recasting it is `account-maintenance` RUNBOOK §8 item 28, due on the first sweep after that date.
+- All other files in this repository are unchanged byte for byte.
+
 ## [1.1.4] - 2026-09-06
 
 Citation infrastructure, doctrine citation line and lockstep maintenance. Session C of the September 2026 improvement pack, one patch release per repository across all 21 public repositories.
