@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.1.5 · 28 September 2026 · Part of GRCnext™**
+**Version 1.1.6 · 5 October 2026 · Part of GRCnext™**
 
 A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. RedCap-01 is deployed as a Custom GPT; this repository mirrors the production deployment verbatim.
 
@@ -236,7 +236,7 @@ Example prompts to try:
 
 See [`BUILD.md`](BUILD.md) for the design rationale, configuration steps, testing approach and limitations.
 
-> **Retirement notice, 28 September 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. The deployed RedCap-01 Custom GPT will be retired on that date and will not be migrated. It has no public link, so nothing else breaks.
+> **Retirement notice, 28 September 2026 (KST), corrected 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. ~~The deployed RedCap-01 Custom GPT will be retired on that date and will not be migrated.~~ **STRUCK 5 October 2026 (KST):** the RedCap-01 Custom GPT was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. The same FAQ, read again on 5 October 2026, states that a migrated GPT stays usable until retirement but becomes read-only. The RedCap-01 Custom GPT has no public link, so nothing else breaks.
 >
 > Everything needed to build your own stays published here: the instruction block and the configuration, including any knowledge files. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read the same day, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.
 
@@ -326,7 +326,7 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.1.5
+**Version:** 1.1.6
 **Date:** 30 July 2026
 **Status:** Production release, mirrored to the deployed Custom GPT, retiring 11 December 2026
 **Method:** Objective-to-Risk Alignment Check
@@ -334,7 +334,7 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.1.5. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.1.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
