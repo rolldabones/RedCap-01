@@ -52,3 +52,7 @@ Please explain:
 ## Attribution
 
 By contributing, you confirm you have the right to contribute your work and agree that it may be distributed under the repository's license (CC BY-NC-SA 4.0, see [`LICENSE.md`](LICENSE.md)).
+
+---
+
+**Final Liability rests with the Human.**

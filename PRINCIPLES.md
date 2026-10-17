@@ -1,12 +1,16 @@
-# RedCap-01 Doctrine
+# RedCap-01 Principles
 
-**Version:** 1.1.1
+**Version:** 1.1.7
 
-**Date:** 30 July 2026
+**Date:** 17 October 2026
 
 **Repository:** RedCap-01
 
 **Method:** Objective-to-Risk Alignment Check
+
+The three doctrines are used in this repository as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement. Where this repository restates a doctrine, it restates it at its own altitude and adds instruments, not doctrine (ECOSYSTEM.md protocol item 6). The ten principles below are the method principles of this diagnostic; they are not doctrine and vary none.
+
+*Amendment note, 17 October 2026 (KST): renamed from `DOCTRINE.md` to `PRINCIPLES.md`, the title "RedCap-01 Doctrine" and the heading "The Doctrine" now read "Principles", and the citation line above is added, so that the account carries one file named DOCTRINE.md (Michael's ruling 12 of 15 October 2026). The ten principles are unchanged word for word.*
 
 ---
 
@@ -32,7 +36,7 @@ Every assessment, template, prompt and recommendation in this repository should 
 
 ---
 
-## The Doctrine
+## The Principles
 
 ### 1. Objectives precede risks.
 

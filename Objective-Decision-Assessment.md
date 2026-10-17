@@ -279,10 +279,10 @@ This assessment is advisory only.
 
 Final decisions remain the responsibility of management and the governing body.
 
-**Final Liability rests with the Human.**
-
 ---
 
 **RedCap-01**
 Objective-to-Risk Alignment Check
 Part of the GRCnext™ ecosystem.
+
+**Final Liability rests with the Human.**

@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.1.6 · 5 October 2026 · Part of GRCnext™**
+**Version 1.1.7 · 17 October 2026 · Part of GRCnext™**
 
 A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. RedCap-01 is deployed as a Custom GPT; this repository mirrors the production deployment verbatim.
 
@@ -43,7 +43,7 @@ Verified 14 July 2026. *From Guidance to Action* was released by COSO on 4 May 2
 
 ## The assessment
 
-RedCap-01 examines eight connected capabilities.
+RedCap-01 examines nine connected capabilities.
 
 ### 1. Objective integrity
 
@@ -58,28 +58,31 @@ RedCap-01 examines eight connected capabilities.
 - Does ERM influence those decisions before options close?
 - Can the organization identify a decision that changed because of ERM?
 
-### 3. Assumptions and uncertainty
+### 3. Assumptions
 
 - What assumptions must remain true?
+
+### 4. Uncertainty
+
 - What uncertainties could materially alter the expected outcome?
 - Are ranges and scenarios used where point estimates would create false precision?
 - Are material interdependencies visible?
 
-### 4. Risk posture and decision boundaries
+### 5. Risk posture and decision boundaries
 
 - What uncertainty is the organization willing to accept in pursuit of the objective?
 - Which outcomes or conditions are unacceptable?
 - Has risk appetite been translated into usable boundaries?
 - Can a leader apply those boundaries to a real decision?
 
-### 5. Triggers and action
+### 6. Triggers and action
 
 - What observable signals require reassessment?
 - Who monitors each trigger?
 - What happens when a trigger is reached?
 - Is the response a defined action, escalation, pause or pivot rather than a request for more reporting?
 
-### 6. Ownership and follow-through
+### 7. Ownership and follow-through
 
 - Who owns the objective?
 - Who owns the decision?
@@ -87,13 +90,13 @@ RedCap-01 examines eight connected capabilities.
 - Who has authority to act?
 - Is follow-through visible and reviewable?
 
-### 7. Operating rhythm
+### 8. Operating rhythm
 
 - Is ERM present in strategy setting, planning, budgeting, capital allocation, transformation, delivery and performance reviews?
 - Or does ERM operate as a parallel reporting process?
 - Do risk discussions occur early enough to preserve options?
 
-### 8. Value and learning
+### 9. Value and learning
 
 - What did ERM change?
 - Which decisions were improved?
@@ -268,13 +271,12 @@ RedCap-01/
 ├── README.md                          Overview, method and deployed configuration
 ├── BUILD.md                           Design rationale, configuration steps, testing, limitations
 ├── RedCap-01-Custom-GPT.md            Production instruction block, mirrored verbatim
-├── DOCTRINE.md                        The ten principles behind the method
+├── PRINCIPLES.md                      The ten principles behind the method
 ├── Objective-Decision-Assessment.md   Full assessment template
 ├── Decision-Boundary-Register.md      Decision boundary register template
 ├── Trigger-Register.md                Trigger register template
 ├── Example-Assessment.md              Fictional worked example
 ├── CHANGELOG.md                       Version history
-├── VERSION.md                         Current version and compatibility
 ├── CONTRIBUTING.md                    Contribution guidance
 └── LICENSE.md                         CC BY-NC-SA 4.0
 ```
@@ -326,15 +328,17 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.1.6
-**Date:** 30 July 2026
+**Version:** 1.1.7
+**Date:** 17 October 2026
 **Status:** Production release, mirrored to the deployed Custom GPT, retiring 11 December 2026
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™
+**Compatibility:** grc-workbook, risk-informed-decision-making-prompt, RedCap-00
+**Versioning:** the account rule. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together. `BUILD.md` and `RedCap-01-Custom-GPT.md` keep the version line of the release that last changed them, stated in each file's own header; `PRINCIPLES.md` was added in this release. Every change is logged in [CHANGELOG.md](CHANGELOG.md). This block replaces `VERSION.md`, deleted at 1.1.7.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.1.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.1.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

@@ -4,6 +4,19 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.1.7] - 2026-10-17
+
+Namespace, version-rule and count corrections. Session T3 of the whole-account review of 15 October 2026 (doc sections 1 and 8; reviewer report 12, items A3, A4, A11, B10, C2 and C8). No instruction block, template question or principle changes.
+
+- **`DOCTRINE.md` renamed `PRINCIPLES.md`** (Michael's ruling 12 of 15 October 2026), so the account carries one file of that name, the canon at rolldabones/DOCTRINE.md. The title and the section heading read "Principles"; the doctrine citation line and a dated amendment note are added; the ten principles are unchanged word for word. The README repository map follows.
+- **`VERSION.md` deleted into the README Status block.** STRUCK: ~~"README.md, BUILD.md, DOCTRINE.md, VERSION.md and RedCap-01-Custom-GPT.md move in lockstep."~~ It was false four ways: `VERSION.md` itself read 1.1.1 against a README at 1.1.6, releases 1.1.4 to 1.1.6 moved only the README and `CITATION.cff`, the account's lockstep set is README, How to Cite, `CITATION.cff`, CHANGELOG and tag, and the mirror file does not re-version with the repository. The Status block now states the account rule and which files keep their own version lines, and carries the compatibility list. STRUCK: the "Next planned enhancements" list, a roadmap nothing has been delivered against since July. RUNBOOK §8 item 25 closes with this release.
+- **Count.** STRUCK: ~~"RedCap-01 examines eight connected capabilities."~~ The instruction block and the assessment template assess nine; the README's section 3, Assumptions and uncertainty, is split into 3, Assumptions, and 4, Uncertainty, as the block does, and sections 4 to 8 renumber to 5 to 9.
+- **Status date.** STRUCK: ~~"Date: 30 July 2026"~~ under the 1.1.6 version line; the Status block now carries the release date, as the masthead does.
+- **Closing line.** Added to `CONTRIBUTING.md`; in `Objective-Decision-Assessment.md` the four-line footer now precedes it, so it is last.
+- README masthead, Status, How to Cite and `CITATION.cff` to 1.1.7 in lockstep. All other files unchanged byte for byte.
+
+---
+
 ## [1.1.6] - 2026-10-05
 
 Correction of substance to the retirement notice of the previous release. On 1 October 2026 the RedCap-01 Custom GPT was converted to a private ChatGPT plugin, so the notice's statement that it would not be migrated was false.
