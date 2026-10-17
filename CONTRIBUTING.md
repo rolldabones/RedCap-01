@@ -38,7 +38,7 @@ Contributions should be:
 - excessive scoring systems
 - documentation for its own sake
 
-Note that `RedCap-01-Custom-GPT.md` mirrors the deployed Custom GPT verbatim. Proposed changes to the instruction block are welcome as suggestions but are merged only together with a production update.
+The instruction block in [`instructions.md`](instructions.md) is the text of record; the custom GPT it came from was retired on 1 October 2026 and its configuration is Locked. Changes to the block are welcome as proposals for the instrument. A proposal is accepted under ruling 9 only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md), and ships in a repository release.
 
 ## Pull requests
 

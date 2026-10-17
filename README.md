@@ -2,11 +2,21 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.1.7 · 17 October 2026 · Part of GRCnext™**
+**Version 1.2.0 · 18 October 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. RedCap-01 is deployed as a Custom GPT; this repository mirrors the production deployment verbatim.
+> **Retired 1 October 2026 (KST).** The RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
+
+## What it does
+
+A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. It assesses nine capabilities, from objective integrity to value and learning, on a five-rating qualitative scale, and it answers "Unknown" or "Insufficient evidence" where support is lacking.
 
 > **Governing question:** Does our Enterprise Risk Management improve the decisions that determine whether we achieve our objectives?
+
+## Run it in three steps
+
+1. Paste the fenced block in [`instructions.md`](instructions.md) into the system prompt, custom instructions or project instructions of any current assistant. There is no `reference.md`: the GPT's knowledge file was a copy of COSO's *From Guidance to Action*, which this repository does not reproduce, so supply your own lawfully obtained copy if you have one.
+2. Give it the inputs it asks for (see How to use it below) or start from the fictional case in [`Example-Assessment.md`](Example-Assessment.md).
+3. Review the output yourself and check it against [`tests.md`](tests.md). You own sign-off.
 
 ## What this is
 
@@ -218,18 +228,7 @@ The tool will help translate the objective into:
 - review cadence
 - evidence of value
 
-## The deployed Custom GPT
-
-RedCap-01 is live as a Custom GPT. The production configuration, mirrored verbatim in this repository, is:
-
-- **Name:** RedCap-01
-- **Description:** An evidence-oriented Enterprise Risk Management (ERM) assessment assistant within the GRCnext™ ecosystem
-- **Instructions:** the block in [`RedCap-01-Custom-GPT.md`](RedCap-01-Custom-GPT.md), reproduced exactly as deployed
-- **Knowledge:** a lawfully obtained copy of *From Guidance to Action: Exploring Practical Enterprise Risk Management* plus any internal, appropriately redacted materials the user wants assessed
-- **Conversation starters:** none configured
-- **Capabilities enabled:** Web Search, Canvas, Image Generation, Code Interpreter & Data Analysis
-
-Example prompts to try:
+### Example prompts
 
 - Test whether our ERM is linked to our strategic objectives.
 - Review this objective and identify the decisions, assumptions, boundaries and triggers that matter.
@@ -237,11 +236,11 @@ Example prompts to try:
 - Convert this ERM report into a decision-useful executive brief.
 - Identify where our ERM process is producing activity rather than decision value.
 
-See [`BUILD.md`](BUILD.md) for the design rationale, configuration steps, testing approach and limitations.
+See [`BUILD.md`](BUILD.md) for the design rationale, build history and limitations, and [`tests.md`](tests.md) for the checks.
 
-> **Retirement notice, 28 September 2026 (KST), corrected 5 October 2026 (KST).** OpenAI is retiring custom GPTs. Its [Custom GPT retirement and migration FAQ](https://help.openai.com/en/articles/20001519-custom-gpt-retirement-and-migration-faq), read on 28 September 2026, states that custom GPTs and their GPT pages become inaccessible on **11 December 2026**, or 11 February 2027 for Enterprise workspaces with an approved deferral. ~~The deployed RedCap-01 Custom GPT will be retired on that date and will not be migrated.~~ **STRUCK 5 October 2026 (KST):** the RedCap-01 Custom GPT was converted to a ChatGPT plugin on 1 October 2026, and the plugin is private and not publicly listed. The same FAQ, read again on 5 October 2026, states that a migrated GPT stays usable until retirement but becomes read-only. The RedCap-01 Custom GPT has no public link, so nothing else breaks.
->
-> Everything needed to build your own stays published here: the instruction block and the configuration, including any knowledge files. OpenAI's replacement is the ChatGPT plugin, in which a GPT's instructions become a Skill and its knowledge files become reference files. Its [Plugins in ChatGPT and Codex](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt-and-codex) article, read the same day, offers plugin creation in supported ChatGPT Business and Enterprise workspaces, so check what your plan allows. The instruction block is not tied to ChatGPT and also serves as the custom instructions of any assistant that accepts them. A plugin does not inherit a GPT's selected model and custom actions do not transfer, so choose the model yourself and test before you rely on the output.
+## Change control
+
+The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md) v1.2.0. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md).
 
 ## Part of the ecosystem
 
@@ -251,7 +250,7 @@ This repository is one tool in a connected set. The canonical map is [ECOSYSTEM.
 - [grc-workbook](https://github.com/rolldabones/grc-workbook): the workbook instrument for building and operating an integrated governance, risk management and compliance capability, within which RedCap-01 serves as a focused ERM diagnostic
 - [risk-informed-decision-making-prompt](https://github.com/rolldabones/risk-informed-decision-making-prompt): structures a single decision under uncertainty; RedCap-01 operates one level above, testing whether the ERM system consistently reaches the decisions that matter
 - [RedCap-00](https://github.com/rolldabones/RedCap-00): tests whether an organization can execute five critical operational moves within 72 hours under disruption; RedCap-01 tests the upstream link between objectives, risk and decisions
-- [AI-Impact-Assessment-Tool](https://github.com/rolldabones/AI-Impact-Assessment-Tool): the companion assessment gate for AI system deployment, built and versioned on the same production-mirror discipline
+- [AI-Impact-Assessment-Tool](https://github.com/rolldabones/AI-Impact-Assessment-Tool): the companion assessment gate for AI system deployment, also published as an instrument since its custom GPT was retired on 1 October 2026
 
 Governing questions across the set:
 
@@ -268,9 +267,10 @@ The repository is intentionally flat.
 
 ```
 RedCap-01/
-├── README.md                          Overview, method and deployed configuration
-├── BUILD.md                           Design rationale, configuration steps, testing, limitations
-├── RedCap-01-Custom-GPT.md            Production instruction block, mirrored verbatim
+├── README.md                          Overview, method, run steps and change control
+├── BUILD.md                           Design rationale, build history, limitations
+├── instructions.md                    Instruction block, text of record
+├── tests.md                           Test cases, known defects, run record
 ├── PRINCIPLES.md                      The ten principles behind the method
 ├── Objective-Decision-Assessment.md   Full assessment template
 ├── Decision-Boundary-Register.md      Decision boundary register template
@@ -328,17 +328,17 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.1.7
-**Date:** 17 October 2026
-**Status:** Production release, mirrored to the deployed Custom GPT, retiring 11 December 2026
+**Version:** 1.2.0
+**Date:** 18 October 2026
+**Status:** Instrument; the custom GPT was retired on 1 October 2026 and its configuration is Locked as of that date
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™
 **Compatibility:** grc-workbook, risk-informed-decision-making-prompt, RedCap-00
-**Versioning:** the account rule. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together. `BUILD.md` and `RedCap-01-Custom-GPT.md` keep the version line of the release that last changed them, stated in each file's own header; `PRINCIPLES.md` was added in this release. Every change is logged in [CHANGELOG.md](CHANGELOG.md). This block replaces `VERSION.md`, deleted at 1.1.7.
+**Versioning:** the account rule, at release 1.2.0. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together. `BUILD.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header; `PRINCIPLES.md` was added at 1.1.7. Every change is logged in [CHANGELOG.md](CHANGELOG.md). This block replaces `VERSION.md`, deleted at 1.1.7.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.1.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.2.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

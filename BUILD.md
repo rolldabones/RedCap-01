@@ -1,8 +1,8 @@
 # Building RedCap-01
 
-**Version:** 1.1.1
-**Date:** 30 July 2026
-**Status:** Production
+**Version:** 1.2.0
+**Date:** 18 October 2026
+**Status:** Instrument; the custom GPT was retired on 1 October 2026
 **Repository:** RedCap-01
 **Part of:** GRCnext™
 
@@ -129,8 +129,8 @@ The repository was developed by:
 3. Defining one missing capability.
 4. Studying the COSO 2026 guidance.
 5. Designing a bounded diagnostic.
-6. Building and deploying the RedCap-01 Custom GPT.
-7. Mirroring the deployed configuration in this repository (v1.1.0).
+6. Building and deploying the RedCap-01 custom GPT (retired 1 October 2026).
+7. Mirroring the GPT's configuration in this repository (v1.1.0); since v1.2.0 the published block in `instructions.md` is the text of record.
 
 ---
 
@@ -158,44 +158,22 @@ References only. No conformance or alignment claim is made. See the dated regula
 
 ---
 
-## Building the Custom GPT
+## Build history: the custom GPT
 
-### Production configuration
+From v1.1.0 to v1.1.7 this repository mirrored a RedCap-01 custom GPT built in OpenAI's GPT builder. The GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform, and its configuration is Locked as of that date. The configuration as last deployed and the builder procedure this section carried are archived in [CHANGELOG.md](CHANGELOG.md) v1.2.0.
 
-The deployed RedCap-01 Custom GPT is configured as follows. [`RedCap-01-Custom-GPT.md`](RedCap-01-Custom-GPT.md) mirrors the live instruction block verbatim.
+## Build your own
 
-| Field | Value |
-|---|---|
-| Name | RedCap-01 |
-| Description | An evidence-oriented Enterprise Risk Management (ERM) assessment assistant within the GRCnext™ ecosystem |
-| Instructions | The block in `RedCap-01-Custom-GPT.md`, pasted exactly |
-| Knowledge | *From Guidance to Action* (lawfully obtained) plus authorized, appropriately redacted internal materials |
-| Conversation starters | None configured |
-| Capabilities | Web Search, Canvas, Image Generation, Code Interpreter & Data Analysis |
-
-### Configuration steps
-
-1. Create a new Custom GPT in the GPT builder.
-2. Set the name and description exactly as above.
-3. Paste the instruction block from `RedCap-01-Custom-GPT.md` into the Instructions field. Paste only the block that follows the header divider; do not include this repository's header material.
-4. Upload a lawfully obtained copy of *From Guidance to Action* to Knowledge. Add internal materials only if authorized and appropriately redacted.
-5. Enable the capabilities listed above. Reduce the set if your deployment does not need them; fewer capabilities means a smaller surface.
-6. Leave conversation starters empty to match production, or add your own; they do not change behavior.
-7. Restrict sharing to the intended audience before publishing.
-8. Test before first use (below).
+1. Paste the fenced block in [`instructions.md`](instructions.md) into the system prompt, custom instructions or project instructions of any current assistant. That takes the place of the GPT's Name, Description and Instructions fields.
+2. If you hold a lawfully obtained copy of *From Guidance to Action*, supply it as a reference document; that takes the place of the GPT's Knowledge upload. Add internal materials only if authorized and appropriately redacted.
+3. The block needs no tools. The GPT had Web Search, Canvas, Image Generation and Code Interpreter & Data Analysis enabled; enable tools only where your deployment needs them, since fewer tools means a smaller surface.
+4. Choose the model yourself. The GPT's model was not recorded.
+5. Restrict sharing to the intended audience.
+6. Run the cases in [`tests.md`](tests.md) before first use.
 
 ### Testing approach
 
-Before relying on the tool, verify at minimum that it:
-
-- begins with objectives and refuses to begin with a risk list
-- uses the five-rating qualitative scale and declines numerical maturity scores unless requested
-- answers "Unknown" or "Insufficient evidence" when given deliberately incomplete inputs rather than inferring
-- refuses to reproduce text from the uploaded COSO publication
-- separates facts, observations, assumptions, gaps and recommendations in the default report
-- states that ERM value has not been demonstrated when no observable outcomes are provided
-
-Run the fictional scenario in [`Example-Assessment.md`](Example-Assessment.md) as a smoke test and compare the shape of the output.
+The cases a build must pass, the known defects and the run record are in [`tests.md`](tests.md).
 
 ### Limitations
 
@@ -218,19 +196,6 @@ RedCap-01 succeeds when users can:
 
 ---
 
-## Future evolution
-
-Potential future enhancements include:
-
-- integration with RedCap-00
-- decision traceability
-- portfolio analytics
-- AI-assisted evidence review
-- structured board reporting
-- objective mapping
-
-The current release intentionally excludes those capabilities to preserve a tightly scoped diagnostic.
-
 ---
 
 ## Versioning philosophy
@@ -249,7 +214,7 @@ Major releases:
 - governance model
 - acceptance criteria
 
-The repository and the deployed Custom GPT version together. A change to the live instruction block requires a repository release in the same cycle, and the reverse.
+The RedCap-01 GPT configuration is Locked as of 1 October 2026. A change to the instruction block in `instructions.md` requires a repository release in the same cycle and, under ruling 9, is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`.
 
 ---
 
@@ -262,5 +227,7 @@ It does not attempt to solve Enterprise Risk Management.
 It asks one question exceptionally well.
 
 > **Does Enterprise Risk Management improve the decisions that determine whether organizational objectives are achieved?**
+
+---
 
 **Final Liability rests with the Human.**
