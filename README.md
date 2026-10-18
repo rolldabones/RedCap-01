@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.2.0 · 18 October 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.1 · 18 October 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 > **Retired 1 October 2026 (KST).** The RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -240,7 +240,7 @@ See [`BUILD.md`](BUILD.md) for the design rationale, build history and limitatio
 
 ## Change control
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md) v1.2.0. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md).
+The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md). The block's first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 10 of 12 cases; it is not accepted, pending review (`tests.md`, Last run; transcripts in [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
 
 ## Part of the ecosystem
 
@@ -263,7 +263,7 @@ Governing questions across the set:
 
 ## Repository structure
 
-The repository is intentionally flat.
+The repository is intentionally flat; its one folder, `evidence/`, holds run records.
 
 ```
 RedCap-01/
@@ -271,6 +271,7 @@ RedCap-01/
 ├── BUILD.md                           Design rationale, build history, limitations
 ├── instructions.md                    Instruction block, text of record
 ├── tests.md                           Test cases, known defects, run record
+├── evidence/                          Run transcripts, copied byte for byte (run T5, 18 October 2026)
 ├── PRINCIPLES.md                      The ten principles behind the method
 ├── Objective-Decision-Assessment.md   Full assessment template
 ├── Decision-Boundary-Register.md      Decision boundary register template
@@ -328,17 +329,17 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.2.0
+**Version:** 1.2.1
 **Date:** 18 October 2026
 **Status:** Instrument; the custom GPT was retired on 1 October 2026 and its configuration is Locked as of that date
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™
 **Compatibility:** grc-workbook, risk-informed-decision-making-prompt, RedCap-00
-**Versioning:** the account rule, at release 1.2.0. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together. `BUILD.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header; `PRINCIPLES.md` was added at 1.1.7. Every change is logged in [CHANGELOG.md](CHANGELOG.md). This block replaces `VERSION.md`, deleted at 1.1.7.
+**Versioning:** the account rule, at release 1.2.1. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together. `BUILD.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header; `PRINCIPLES.md` was added at 1.1.7. Every change is logged in [CHANGELOG.md](CHANGELOG.md). This block replaces `VERSION.md`, deleted at 1.1.7.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.2.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.2.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

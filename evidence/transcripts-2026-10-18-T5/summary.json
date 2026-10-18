@@ -1,0 +1,74 @@
+{
+ "suite": "redcap-01",
+ "repo": "RedCap-01",
+ "head": "4d32760",
+ "system_files": {
+  "../Claude outputs/T5-runs/suites/blocks/RedCap-01-instructions.txt": "5225497cfcbfdf411a3b632876fec236e68584025fd0fde1c5be352d77e84ecd"
+ },
+ "tested_model": "claude-opus-5-5",
+ "scorer_model": "claude-sonnet-5-5",
+ "max_tokens": 16000,
+ "finished": "2026-10-18T10:49+09:00",
+ "results": [
+  {
+   "case": "T1",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T10",
+   "verdict": "FAIL",
+   "truncated": false
+  },
+  {
+   "case": "T11",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T12",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T2",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T3",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T4",
+   "verdict": "FAIL",
+   "truncated": false
+  },
+  {
+   "case": "T5",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T6",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T7",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T8",
+   "verdict": "PASS",
+   "truncated": false
+  },
+  {
+   "case": "T9",
+   "verdict": "PASS",
+   "truncated": false
+  }
+ ]
+}

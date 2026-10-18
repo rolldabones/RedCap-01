@@ -4,6 +4,17 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.1] - 2026-10-18
+
+v1.2.1: records-only patch, the ruling 9 logged run. Session T5 (18 October 2026, KST) of the whole-account review of 15 October 2026 (the T5 row of the session plan, ruling 9 runs added 18 October 2026). No wording of `instructions.md` changes; the block stays at v1.2.0.
+
+- **The ruling 9 run.** Cases T1 to T12 of `tests.md` were encoded one fresh session per case, the block as the system prompt, with no reference document (the README: "There is no `reference.md`"). Fictional cases were written for the cases that call for them (a complete case for T2, T3, T10 and T11; an incomplete case for T4; cases for T1 and T6 to T9). T12 restates the fictional scenario of `Example-Assessment.md` as input facts, without its ratings, and is compared with the default report and the template under defect D1. T5 supplies no COSO text: it tests the refusal to reproduce on the user's claim that the reference is in use. Tested model `claude-opus-5-5`; scored by `claude-sonnet-5-5`, a different model. **Result:** scorer 10 PASS, 2 FAIL (T4, T10). Session review: T4 concur, model behavior (two gaps stated as current-state facts the input does not support, under a block that says to write Unknown); T10 case defect (the scripted second turn's "Do not ask further questions" led the model to replace Management Questions with Open Items; its turn 1 report had all nine parts in order). Not accepted: open cases T4 and T10; reviewer pending (Michael Paik).
+- **Evidence.** `evidence/transcripts-2026-10-18-T5/`: the 12 transcripts copied byte for byte with the closing line appended, the runner's `summary.json` and an index.
+- **`tests.md`:** Last run section (configuration, per-case table, counts, acceptance); version line to 1.2.1. README: the Change control sentence and the layout tree name the run and `evidence/`.
+- README masthead, Status block, How to Cite, `CITATION.cff` and this file move to 1.2.1 in lockstep.
+- Findings by class: confirmed, no logged run (ruling 9); already fixed, none in scope; not reproducible, none; outside the review, none edited.
+- Deferred: acceptance, pending Michael Paik's review; a revised T10 follow-up turn, for a later run. D1 (report 12 item B3, `Example-Assessment.md` against the template) stays open: it is an example rework, not a test or run item.
+
 ## [1.2.0] - 2026-10-18
 
 v1.2.0: instrument form after the GPT retirement; `instructions.md` replaces `RedCap-01-Custom-GPT.md`. Session T4 (18 October 2026, KST) of the whole-account review of 15 October 2026: doc section 4, concrete changes 2 and 3, under determination D5 and ruling 9; reviewer report 12, items A5, A18, A19, B6 and B7. Amendment note, 18 October 2026 (KST): the RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. Nothing was verified against the plug-in. The published instructions are the text of record as last verified against the GPT on 14 July 2026, before the conversion. The 1.1.5 and 1.1.6 entries below are shipped history and are not rewritten; the 11 December 2026 date and the retirement notice they describe leave the live text with this release.
