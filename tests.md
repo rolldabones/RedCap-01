@@ -1,6 +1,6 @@
 # RedCap-01 Tests
 
-**Version 1.2.1 · 18 October 2026 (KST)**
+**Version 1.2.2 · 19 October 2026 (KST)**
 
 The checks that the published instructions in [`instructions.md`](instructions.md) must pass, the known defects and the run record. The cases are drawn from the block's own rules and from the testing approach that `BUILD.md` carried until v1.2.0.
 
@@ -56,7 +56,7 @@ LLM scoring is developer testing, not independent assurance. The session review 
 
 **Counts.** Scorer: 10 PASS, 2 FAIL, 0 UNSCORABLE, 0 truncated. Session review of the two FAILs: 1 concur, model behavior (T4); 1 case defect (T10); no dissent; no instrument defect.
 
-**Acceptance.** The rule here: "A case passes only when every pass condition holds." **Not accepted: open cases T4 and T10 (T10 not exercised cleanly). Reviewer: pending (Michael Paik).**
+**Acceptance.** The rule here: "A case passes only when every pass condition holds." **Not accepted: open cases T4 and T10 (T10 not exercised cleanly). Reviewer: Michael Paik, 19 October 2026 (KST), concurs.**
 
 History: no run record from the GPT era is published. The 14 July 2026 verification compared the repository text with the GPT's Instructions field (4,628 characters) and was not a test run. The GPT's model was not recorded (Unknown).
 

@@ -4,6 +4,13 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.2] - 2026-10-19
+
+Patch, from the weekly maintenance sweep of 19 October 2026 (KST) and Michael Paik's review of the T5 runs, completed 19 October 2026 (KST), on which he concurs with the scoring as recorded. No change to `instructions.md`.
+
+- **Run T5 reviewed.** `tests.md` Acceptance records the reviewer. Not accepted, as before: T4 and T10 open. This closes the "Deferred: acceptance, pending Michael Paik's review" line of 1.2.1; the revised T10 follow-up turn stays deferred.
+- README masthead, version line and Versioning line, How to Cite, `tests.md` masthead and `CITATION.cff` to v1.2.2.
+
 ## [1.2.1] - 2026-10-18
 
 v1.2.1: records-only patch, the ruling 9 logged run. Session T5 (18 October 2026, KST) of the whole-account review of 15 October 2026 (the T5 row of the session plan, ruling 9 runs added 18 October 2026). No wording of `instructions.md` changes; the block stays at v1.2.0.
