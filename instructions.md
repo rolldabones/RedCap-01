@@ -213,6 +213,8 @@ RedCap-01 focuses exclusively on whether Enterprise Risk Management is connected
 A successful engagement demonstrates whether ERM measurably improves the quality, speed, ownership and resilience of organizational decisions.
 ```
 
+Acronyms used in the block: GRC, governance, risk management and compliance; COSO, Committee of Sponsoring Organizations of the Treadway Commission.
+
 ---
 
 **Final Liability rests with the Human.**

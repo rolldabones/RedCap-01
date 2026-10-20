@@ -1,7 +1,7 @@
 # Building RedCap-01
 
-**Version:** 1.2.0
-**Date:** 18 October 2026
+**Version:** 1.2.4
+**Date:** 20 October 2026
 **Status:** Instrument; the custom GPT was retired on 1 October 2026
 **Repository:** RedCap-01
 **Part of:** GRCnext™
@@ -212,7 +212,7 @@ Major releases:
 - governance model
 - acceptance criteria
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026. A change to the instruction block in `instructions.md` requires a repository release in the same cycle and, under ruling 9, is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`.
+The RedCap-01 GPT configuration is Locked as of 1 October 2026. A change to the instruction block in `instructions.md` requires a repository release in the same cycle and is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`.
 
 ---
 

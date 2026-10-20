@@ -4,6 +4,18 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.4] - 2026-10-20
+
+Patch. Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. No change to the fenced block in `instructions.md`: its SHA-256 `5225497c...e84ecd` stands and the block stays at v1.2.0.
+
+- **Test record.** `tests.md`: the T10 FAIL is reclassified from case defect to instrument defect, registered as known defect D2 (the nine-part default report is not followed reliably; turn 1 outputs of T1, T2, T6 and T8 already break the order). The recorded concurrence of 19 October 2026 is kept, with a dated note. The T12 pass condition names the block's nine-part default report only, and D1 is conformed. The T1 reason now matches its transcript. The run is stated as not reproducible from the repository alone, since the runner is not shipped. Version line to 1.2.4. Acceptance unchanged: not accepted, T4 and T10 open (RC1-01, RC1-06, RC1-11).
+- **README.** A "Not accepted" caution opens Run it in three steps (RC1-04). The Change control sentence records the 19 October 2026 review (RC1-02). The Status block date moves with the masthead (RC1-03). Capabilities 7 and 8 are renumbered to match the block and tests, with the block's short names stated (RC1-05). The six-item default report list is replaced by the block's nine-part order (RC1-07). The no-evidence term is the block's own (RC1-14). The COSO paper's authors are named as of Crowe LLP, from the COSO press release of 4 May 2026 (RC1-15). The block's "measurably" is qualified against "It is not a measurement" (RC1-13). KST and COSO are spelled out (RC1-17).
+- **Other files.** `PRINCIPLES.md` names the three doctrines and states the doctrine delta rule (RC1-16). `BUILD.md` spells out GRC and drops a doubled rule (RC1-17, RC1-19). `instructions.md` gains an acronym line outside the fence (RC1-17). `Example-Assessment.md` uses only the five-rating scale and the template's "Near Term", and spells out SLA (RC1-12, RC1-17). The evidence index lists cases T1 to T12 in numeric order; transcripts and `summary.json` are unchanged (RC1-20).
+- **Internal references replaced by plain statements** in `tests.md`, `BUILD.md`, `CONTRIBUTING.md` and `PRINCIPLES.md`: the acceptance rule is stated, not cited by an internal ruling number, and the D1 source label is dropped. Shipped entries below are not rewritten (RC1-09).
+- **Errata to shipped entries.** The 1.2.0 entry says "The block measures 4,808 characters". The fenced block is 4,807 characters; 4,808 counts the trailing newline, which the hashed text excludes (RC1-10). The untitled "License metadata sweep" paragraph inside the 1.1.2 entry shipped in release 1.1.2: commit `265e32a` of 13 August 2026, first carried by tag `v1.1.2` (RC1-08).
+- README masthead, Status block and Versioning line, How to Cite, `CITATION.cff`, `BUILD.md` header, `tests.md` header and this head to v1.2.4.
+- Findings applied: RC1-01, RC1-02, RC1-03, RC1-04, RC1-05, RC1-06, RC1-07, RC1-08, RC1-09, RC1-10, RC1-11, RC1-12, RC1-13, RC1-14, RC1-15, RC1-16, RC1-17, RC1-19, RC1-20. Owner-accepted, no change: RC1-18, RC1-21.
+
 ## [1.2.3] - 2026-10-20
 
 - LICENSE: two defects against the Creative Commons legal code corrected (the space in 'ShareAlike. In'; the CC0 sentence of the closing notice). Operative terms unchanged.

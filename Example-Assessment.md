@@ -41,7 +41,7 @@ Increase regional revenue by 20% within 24 months through market expansion.
 
 | Decision | ERM Influence | Observation |
 |---|---|---|
-| Enter market | Partial | Risk reviewed after investment recommendation. |
+| Enter market | Developing | Risk reviewed after investment recommendation. |
 | Select local partner | Strong | Vendor due diligence influenced selection. |
 | Allocate capital | Limited | Financial scenarios prepared, but not linked to risk appetite. |
 | Launch timing | Limited | No predefined triggers for delay or acceleration. |
