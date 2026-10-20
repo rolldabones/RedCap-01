@@ -4,7 +4,7 @@
 
 **Version 1.2.3 · 20 October 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-> **Retired 1 October 2026 (KST).** The RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
+> **Retired 1 October 2026 (Korea Standard Time, KST).** The RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
 ## What it does
 
@@ -14,7 +14,9 @@ A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Mana
 
 ## Run it in three steps
 
-1. Paste the fenced block in [`instructions.md`](instructions.md) into the system prompt, custom instructions or project instructions of any current assistant. There is no `reference.md`: the GPT's knowledge file was a copy of COSO's *From Guidance to Action*, which this repository does not reproduce, so supply your own lawfully obtained copy if you have one.
+> **Not accepted.** The published block has not passed its own acceptance test. Its first logged run, T5 of 18 October 2026 (KST), left cases T4 and T10 open, and in T4 the block failed "Never invent facts": the model stated unsupported facts as current-state gaps. Check every output against the evidence you supplied. See [`tests.md`](tests.md), Last run.
+
+1. Paste the fenced block in [`instructions.md`](instructions.md) into the system prompt, custom instructions or project instructions of any current assistant. There is no `reference.md`: the GPT's knowledge file was a copy of *From Guidance to Action* by the Committee of Sponsoring Organizations of the Treadway Commission (COSO), which this repository does not reproduce, so supply your own lawfully obtained copy if you have one.
 2. Give it the inputs it asks for (see How to use it below) or start from the fictional case in [`Example-Assessment.md`](Example-Assessment.md).
 3. Review the output yourself and check it against [`tests.md`](tests.md). You own sign-off.
 
@@ -92,19 +94,19 @@ RedCap-01 examines nine connected capabilities.
 - What happens when a trigger is reached?
 - Is the response a defined action, escalation, pause or pivot rather than a request for more reporting?
 
-### 7. Ownership and follow-through
+### 7. Operating rhythm
+
+- Is ERM present in strategy setting, planning, budgeting, capital allocation, transformation, delivery and performance reviews?
+- Or does ERM operate as a parallel reporting process?
+- Do risk discussions occur early enough to preserve options?
+
+### 8. Ownership and follow-through
 
 - Who owns the objective?
 - Who owns the decision?
 - Who monitors assumptions and triggers?
 - Who has authority to act?
 - Is follow-through visible and reviewable?
-
-### 8. Operating rhythm
-
-- Is ERM present in strategy setting, planning, budgeting, capital allocation, transformation, delivery and performance reviews?
-- Or does ERM operate as a parallel reporting process?
-- Do risk discussions occur early enough to preserve options?
 
 ### 9. Value and learning
 
@@ -149,7 +151,7 @@ Claims should be supported by high-level references to artifacts or observable p
 
 Do not paste confidential information, personal data, credentials, bank details, sensitive contract text, regulator correspondence, security vulnerabilities or export-controlled information. Use redacted summaries and artifact descriptions.
 
-When support is absent or unclear, RedCap-01 uses **Unknown/Insufficient data** rather than filling gaps by inference.
+When support is absent or unclear, RedCap-01 uses "Unknown" or "Insufficient evidence" rather than filling gaps by inference.
 
 ## What you get
 
@@ -166,14 +168,7 @@ Depending on the requested scope, RedCap-01 can produce:
 - a board-ready summary
 - questions requiring management judgment
 
-The default report distinguishes:
-
-1. facts and evidence provided
-2. observations
-3. assumptions
-4. gaps
-5. recommendations
-6. management decisions required
+The default report follows the nine-part order set under Default report in [`instructions.md`](instructions.md): Executive Summary, Evidence Reviewed, Observations, Strengths, Gaps, Recommendations, Quick Wins, Longer-Term Improvements and Management Questions. It separates facts from recommendations and states assumptions explicitly.
 
 ## How to use it
 
@@ -240,7 +235,7 @@ See [`BUILD.md`](BUILD.md) for the design rationale, build history and limitatio
 
 ## Change control
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md). The block's first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 10 of 12 cases; it is not accepted, pending review (`tests.md`, Last run; transcripts in [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
+The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md). The block's first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 10 of 12 cases. It is not accepted, on open cases T4 and T10; Michael Paik reviewed the run on 19 October 2026 (KST) and concurs (`tests.md`, Last run; transcripts in [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
 
 ## Part of the ecosystem
 
@@ -318,6 +313,8 @@ RedCap-01 is an independent GRCnext™ tool inspired by:
 
 Ryan Luttenton, Stefany Samp and Alexa Stone, *From Guidance to Action: Exploring Practical Enterprise Risk Management*, Committee of Sponsoring Organizations of the Treadway Commission, 2026.
 
+The paper was commissioned by COSO and written by its three authors at Crowe LLP ([COSO press release, 4 May 2026](https://www.coso.org/_files/ugd/719ba0_370ab9f09a58412caa57acf6c946838d.pdf)).
+
 Official COSO materials:
 
 - [New ERM Guidance](https://www.coso.org/new-erm-guidance)
@@ -330,7 +327,7 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 ## Status
 
 **Version:** 1.2.3
-**Date:** 18 October 2026
+**Date:** 20 October 2026
 **Status:** Instrument; the custom GPT was retired on 1 October 2026 and its configuration is Locked as of that date
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™

@@ -41,7 +41,7 @@ LLM scoring is developer testing, not independent assurance. The session review 
 
 | Case | Scorer verdict | Session review | Reason |
 | --- | --- | --- | --- |
-| T1 | PASS | not reviewed | asked for objectives before analyzing the register |
+| T1 | PASS | not reviewed | identified the absence of objectives first and asked for them in Management Questions |
 | T2 | PASS | not reviewed | five-rating scale only; no numerical score |
 | T3 | PASS | not reviewed | numerical scores given, labeled as requested |
 | T4 | FAIL | concur, model behavior | the final report states as current-state gaps that "Scenario outputs are not recorded as decision inputs" (G7) and "Critical assumptions are not identified" (G4); the input says only "Some scenarios were discussed" and nothing on assumptions, and the same report rates scenario content Unknown. The block is clear: "Use \"Unknown\" or \"Insufficient evidence\" whenever support is lacking" and "Never invent facts." |

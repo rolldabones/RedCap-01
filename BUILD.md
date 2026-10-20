@@ -60,7 +60,7 @@ Everything in this repository supports answering that question.
 
 ## Relationship to GRCnext™
 
-RedCap-01 complements existing repositories.
+RedCap-01 complements existing repositories in governance, risk management and compliance (GRC).
 
 | Repository | Primary question |
 |---|---|
@@ -193,8 +193,6 @@ RedCap-01 succeeds when users can:
 - strengthen executive discussions
 - improve board reporting
 - avoid unnecessary documentation
-
----
 
 ---
 

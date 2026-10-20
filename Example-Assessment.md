@@ -92,7 +92,7 @@ Recommended translation:
 |---|---|---|
 | Capital overrun | >10% | Executive review |
 | Regulatory delay | >90 days | Reassess launch schedule |
-| Partner performance | SLA below agreed minimum | Activate contingency partner |
+| Partner performance | Service level agreement (SLA) below agreed minimum | Activate contingency partner |
 
 ---
 
@@ -151,7 +151,7 @@ Evidence was limited that ERM materially influenced the initial market-entry dec
 - Assign ownership for assumptions.
 - Establish three objective-specific triggers.
 
-## Next 90 Days
+## Near Term
 
 - Embed ERM into investment committee agendas.
 - Replace heat-map discussion with scenario and trigger discussion.

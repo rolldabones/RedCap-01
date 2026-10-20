@@ -8,7 +8,7 @@
 
 **Method:** Objective-to-Risk Alignment Check
 
-The three doctrines are used in this repository as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement. Where this repository restates a doctrine, it restates it at its own altitude and adds instruments, not doctrine (ECOSYSTEM.md protocol item 6). The ten principles below are the method principles of this diagnostic; they are not doctrine and vary none.
+The three doctrines, Slow AI, Informed Intent and Final Liability rests with the Human, are used in this repository as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement. Where this repository restates a doctrine, it restates it at its own altitude and adds instruments, not doctrine. That is the doctrine delta rule ([ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) protocol item 6): restating a doctrine at a different altitude is permitted; varying the rule is not. The ten principles below are the method principles of this diagnostic; they are not doctrine and vary none.
 
 *Amendment note, 17 October 2026 (KST): renamed from `DOCTRINE.md` to `PRINCIPLES.md`, the title "RedCap-01 Doctrine" and the heading "The Doctrine" now read "Principles", and the citation line above is added, so that the account carries one file named DOCTRINE.md (Michael's ruling 12 of 15 October 2026). The ten principles are unchanged word for word.*
 

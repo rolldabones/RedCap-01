@@ -13,9 +13,6 @@ How produced: the session T5 runner (`t5_run.py`, a session tool, not shipped in
 | Case | Scorer verdict |
 |---|---|
 | [T1](T1.md) | PASS |
-| [T10](T10.md) | FAIL |
-| [T11](T11.md) | PASS |
-| [T12](T12.md) | PASS |
 | [T2](T2.md) | PASS |
 | [T3](T3.md) | PASS |
 | [T4](T4.md) | FAIL |
@@ -24,6 +21,9 @@ How produced: the session T5 runner (`t5_run.py`, a session tool, not shipped in
 | [T7](T7.md) | PASS |
 | [T8](T8.md) | PASS |
 | [T9](T9.md) | PASS |
+| [T10](T10.md) | FAIL |
+| [T11](T11.md) | PASS |
+| [T12](T12.md) | PASS |
 
 ---
 
