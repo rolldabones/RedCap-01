@@ -4,6 +4,10 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.5] - 2026-10-26
+
+Patch release. Acceptance restated as a tolerance: the tests file is now read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), names its critical cases and records the instrument's status under that rule (not accepted: critical case T4 failed); the README carries the same status below its masthead. No rule in the instrument changed and no run was made; the edits are to the test record and the front door. Train A of the whole-account review of 24 October 2026 (KST); prepared with Claude, approved by Michael Paik.
+
 ## [1.2.4] - 2026-10-20
 
 Patch. Independent review of 20 October 2026; changes made with Claude, approved by Michael Paik. No change to the fenced block in `instructions.md`: its SHA-256 `5225497c...e84ecd` stands and the block stays at v1.2.0.
