@@ -4,6 +4,11 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.6] - 2026-11-02
+
+- README Related repositories: the GRCnext™ primitives point to GRCnext-Copilot, where they run as an engine, not to `grc`. Found by the whole-account review of 24 October 2026 (reader report 05); train B. No change to the block or any test record; acceptance unchanged.
+- README, `tests.md` and `CITATION.cff` to v1.2.6. Prepared with Claude, approved by Michael Paik.
+
 ## [1.2.5] - 2026-10-26
 
 Patch release. Acceptance restated as a tolerance: the tests file is now read under the account rule, [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), names its critical cases and records the instrument's status under that rule (not accepted: critical case T4 failed); the README carries the same status below its masthead. No rule in the instrument changed and no run was made; the edits are to the test record and the front door. Train A of the whole-account review of 24 October 2026 (KST); prepared with Claude, approved by Michael Paik.
