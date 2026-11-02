@@ -4,6 +4,12 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.7] - 2026-11-03
+
+- README Repository structure: the code-block tree becomes a table linking every file, the instruments first and `evidence/` last; `CITATION.cff` gains its row.
+- README Status block: the Date read 20 October 2026 through releases 1.2.5 and 1.2.6, though the block states it moves with the masthead; it now reads the release date. The two history clauses ("`PRINCIPLES.md` was added at 1.1.7", "This block replaces `VERSION.md`, deleted at 1.1.7") and the version token in the Versioning line leave it; the history stays in this file.
+- Train C of the improvement rotation (review of 24 October 2026). No change to the block or any test record; acceptance unchanged. README, `tests.md` and `CITATION.cff` to v1.2.7. Prepared with Claude, approved by Michael Paik.
+
 ## [1.2.6] - 2026-11-02
 
 - README Related repositories: the GRCnext™ primitives point to GRCnext-Copilot, where they run as an engine, not to `grc`. Found by the whole-account review of 24 October 2026 (reader report 05); train B. No change to the block or any test record; acceptance unchanged.

@@ -1,6 +1,6 @@
 # RedCap-01 Tests
 
-**Version 1.2.6 · 2 November 2026 (KST)**
+**Version 1.2.7 · 3 November 2026 (KST)**
 
 The checks that the published instructions in [`instructions.md`](instructions.md) must pass, the known defects and the run record. The cases are drawn from the block's own rules and from the testing approach that `BUILD.md` carried until v1.2.0.
 
@@ -59,7 +59,7 @@ LLM scoring is developer testing, not independent assurance. The session review 
 
 **Acceptance.** The rule here: "A case passes only when every pass condition holds." **Not accepted: open cases T4 and T10 (T10 not exercised cleanly). Reviewer: Michael Paik, 19 October 2026 (KST), concurs.** Independent review, 20 October 2026: T10 is reclassified from case defect to instrument defect D2, approved by Michael Paik; the result, not accepted, stands.
 
-**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST), unchanged at v1.2.6 (2 November 2026).** Not accepted. Run T5 (18 October 2026) passed 10 of 12 cases; critical case T4 (no invented facts) failed, and T10 is an instrument defect (D2). **Critical cases:** T4 and T5. The acceptance sentences above were written under this file's earlier rule and are kept as the record of that review. The reviewer's concurrence with the run as recorded is read as concurrence per case (ACCEPTANCE.md (e)); each failed case keeps the disposition its session review gives it (model behavior: accepted model behavior; instrument defect: fix in the next block; case defect: case defect).
+**Status under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026 (KST), unchanged at v1.2.7 (3 November 2026).** Not accepted. Run T5 (18 October 2026) passed 10 of 12 cases; critical case T4 (no invented facts) failed, and T10 is an instrument defect (D2). **Critical cases:** T4 and T5. The acceptance sentences above were written under this file's earlier rule and are kept as the record of that review. The reviewer's concurrence with the run as recorded is read as concurrence per case (ACCEPTANCE.md (e)); each failed case keeps the disposition its session review gives it (model behavior: accepted model behavior; instrument defect: fix in the next block; case defect: case defect).
 
 History: no run record from the GPT era is published. The 14 July 2026 verification compared the repository text with the GPT's Instructions field (4,628 characters) and was not a test run. The GPT's model was not recorded (Unknown).
 

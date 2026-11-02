@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.2.6 · 2 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.7 · 3 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted. Run T5 (18 October 2026) passed 10 of 12 cases; critical case T4 (no invented facts) failed, and T10 is an instrument defect (D2). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -260,24 +260,23 @@ Governing questions across the set:
 
 ## Repository structure
 
-The repository is intentionally flat; its one folder, `evidence/`, holds run records.
+The repository is flat; its one folder, `evidence/`, holds run records and is listed last because it sits behind the instruments.
 
-```
-RedCap-01/
-├── README.md                          Overview, method, run steps and change control
-├── BUILD.md                           Design rationale, build history, limitations
-├── instructions.md                    Instruction block, text of record
-├── tests.md                           Test cases, known defects, run record
-├── evidence/                          Run transcripts, copied byte for byte (run T5, 18 October 2026)
-├── PRINCIPLES.md                      The ten principles behind the method
-├── Objective-Decision-Assessment.md   Full assessment template
-├── Decision-Boundary-Register.md      Decision boundary register template
-├── Trigger-Register.md                Trigger register template
-├── Example-Assessment.md              Fictional worked example
-├── CHANGELOG.md                       Version history
-├── CONTRIBUTING.md                    Contribution guidance
-└── LICENSE.md                         CC BY-NC-SA 4.0
-```
+| File | What it holds |
+|---|---|
+| [instructions.md](instructions.md) | The instruction block, text of record |
+| [PRINCIPLES.md](PRINCIPLES.md) | The ten principles behind the method |
+| [Objective-Decision-Assessment.md](Objective-Decision-Assessment.md) | Full assessment template |
+| [Decision-Boundary-Register.md](Decision-Boundary-Register.md) | Decision boundary register template |
+| [Trigger-Register.md](Trigger-Register.md) | Trigger register template |
+| [Example-Assessment.md](Example-Assessment.md) | Fictional worked example |
+| [tests.md](tests.md) | Test cases, known defects, run record |
+| [BUILD.md](BUILD.md) | Design rationale, build history, limitations |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidance |
+| [CHANGELOG.md](CHANGELOG.md) | Version history |
+| [CITATION.cff](CITATION.cff) | Machine-readable citation |
+| [LICENSE.md](LICENSE.md) | CC BY-NC-SA 4.0 |
+| [evidence/transcripts-2026-10-18-T5/](evidence/transcripts-2026-10-18-T5/README.md) | Run transcripts of 18 October 2026, copied byte for byte |
 
 ## Important limitations
 
@@ -328,17 +327,17 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.2.6
-**Date:** 20 October 2026
+**Version:** 1.2.7
+**Date:** 3 November 2026
 **Status:** Instrument; the custom GPT was retired on 1 October 2026 and its configuration is Locked as of that date
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™
 **Compatibility:** grc-workbook, risk-informed-decision-making-prompt, RedCap-00
-**Versioning:** the account rule, at release 1.2.6. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together. `BUILD.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header; `PRINCIPLES.md` was added at 1.1.7. Every change is logged in [CHANGELOG.md](CHANGELOG.md). This block replaces `VERSION.md`, deleted at 1.1.7.
+**Versioning:** the account rule. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together; `BUILD.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header. Every change is logged in [CHANGELOG.md](CHANGELOG.md).
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.2.6. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.2.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
