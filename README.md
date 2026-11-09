@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.2.7 · 3 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.8 · 9 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted. Run T5 (18 October 2026) passed 10 of 12 cases; critical case T4 (no invented facts) failed, and T10 is an instrument defect (D2). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -327,8 +327,8 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.2.7
-**Date:** 3 November 2026
+**Version:** 1.2.8
+**Date:** 9 November 2026
 **Status:** Instrument; the custom GPT was retired on 1 October 2026 and its configuration is Locked as of that date
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** GRCnext™
@@ -337,13 +337,15 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.2.7. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.2.8. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
 ## License
 
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). See [`LICENSE.md`](LICENSE.md).
+
+Commercial use, including a Client's use in its own operations, is set out in [LICENSING.md](https://github.com/rolldabones/rolldabones/blob/main/LICENSING.md).
 
 Third-party publications, trademarks and referenced materials remain subject to their respective rights and terms.
 
