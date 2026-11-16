@@ -2,7 +2,7 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.2.8 · 9 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of GRCnext™ · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.2.9 · 16 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of the rolldabones governance ecosystem · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
 **Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted. Run T5 (18 October 2026) passed 10 of 12 cases; critical case T4 (no invented facts) failed, and T10 is an instrument defect (D2). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
@@ -12,7 +12,7 @@
 
 A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Management (ERM) is genuinely anchored to organizational objectives, strategic decisions and operational execution. It assesses nine capabilities, from objective integrity to value and learning, on a five-rating qualitative scale, and it answers "Unknown" or "Insufficient evidence" where support is lacking.
 
-> **Governing question:** Does our Enterprise Risk Management improve the decisions that determine whether we achieve our objectives?
+> **Governing question:** Does Enterprise Risk Management improve the decisions that determine whether organizational objectives are achieved?
 
 ## Run it in three steps
 
@@ -24,7 +24,7 @@ A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Mana
 
 ## What this is
 
-RedCap-01 is a practical self-assessment and advisory tool within the **GRCnext™** ecosystem.
+RedCap-01 is a practical self-assessment and advisory tool within the rolldabones governance ecosystem, using the **GRCnext™** framework.
 
 **What this instrument is, stated plainly.** This is a **structured self-assessment**. It is not a measurement, a benchmark, an audit, a certification or a rating. Its outputs are the organization's own answers, organized against a defined structure and disciplined by an evidence rule. That structure is what makes the answers comparable over time and arguable in front of a board. It does not make them independent. A score produced here evidences the organization's position; it does not attest to it, and it should never be presented externally as though a third party had. The instruction block's success criterion asks whether ERM "measurably" improves decisions; read that as a call for observable evidence of changed decisions, not as a measurement of ERM.
 
@@ -53,7 +53,7 @@ RedCap-01 converts that practical orientation into a bounded diagnostic.
 
 ## Regulatory and standards currency
 
-Verified 14 July 2026. *From Guidance to Action* was released by COSO on 4 May 2026 and is COSO's current supplemental ERM guidance; the COSO Enterprise Risk Management framework (2017) remains the framework of record. This repository cites COSO, ISO 31000, ISO/IEC 42001, the NIST AI Risk Management Framework and OCEG as references only. It makes no conformance, alignment or certification claim against any of them. Verify current status before relying on any framework reference.
+Verified 16 November 2026 (KST) on coso.org: *From Guidance to Action: Exploring Practical Enterprise Risk Management* was released by COSO on 4 May 2026 and is the newest document on COSO's Enterprise Risk Management guidance page; the COSO Enterprise Risk Management framework (2017) remains the framework of record. This repository cites COSO, ISO 31000, ISO/IEC 42001, the NIST AI Risk Management Framework and OCEG as references only. It makes no conformance, alignment or certification claim against any of them. Verify current status before relying on any framework reference.
 
 ## The assessment
 
@@ -237,7 +237,7 @@ See [`BUILD.md`](BUILD.md) for the design rationale, build history and limitatio
 
 ## Change control
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md). The block's first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 10 of 12 cases. It is not accepted, on open cases T4 and T10; Michael Paik reviewed the run on 19 October 2026 (KST) and concurs (`tests.md`, Last run; transcripts in [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
+The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in [`tests.md`](tests.md). The block's first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 10 of 12 cases. It is not accepted, on open cases T4 and T10; Michael Paik reviewed the run on 19 October 2026 (KST) and concurs (`tests.md`, Last run; transcripts in [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
 
 ## Part of the ecosystem
 
@@ -304,17 +304,17 @@ RedCap-01 is designed to remain:
 - usable under real constraints
 - clear about ownership
 - focused on observable value
-- complementary to existing **GRCnext™** methods
+- complementary to the other methods in the ecosystem
 
 It should not become a general ERM encyclopedia, a documentation generator or a substitute for the broader repositories to which it connects.
 
 ## Reference and attribution
 
-RedCap-01 is an independent GRCnext™ tool inspired by:
+RedCap-01 is an independent tool in the rolldabones governance ecosystem, inspired by:
 
 Ryan Luttenton, Stefany Samp and Alexa Stone, *From Guidance to Action: Exploring Practical Enterprise Risk Management*, Committee of Sponsoring Organizations of the Treadway Commission, 2026.
 
-The paper was commissioned by COSO and written by its three authors at Crowe LLP ([COSO press release, 4 May 2026](https://www.coso.org/_files/ugd/719ba0_370ab9f09a58412caa57acf6c946838d.pdf)).
+The paper was commissioned by COSO and written by its three authors at Crowe LLP ([COSO press release, 4 May 2026](https://www.coso.org/_files/ugd/719ba0_370ab9f09a58412caa57acf6c946838d.pdf), read 16 November 2026).
 
 Official COSO materials:
 
@@ -327,17 +327,17 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.2.8
-**Date:** 9 November 2026
-**Status:** Instrument; the custom GPT was retired on 1 October 2026 and its configuration is Locked as of that date
+**Version:** 1.2.9
+**Date:** 16 November 2026
+**Status:** Instrument; formerly a custom GPT (see Change control)
 **Method:** Objective-to-Risk Alignment Check
-**Ecosystem:** GRCnext™
+**Ecosystem:** the rolldabones governance ecosystem; framework: GRCnext™
 **Compatibility:** grc-workbook, risk-informed-decision-making-prompt, RedCap-00
-**Versioning:** the account rule. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together; `BUILD.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header. Every change is logged in [CHANGELOG.md](CHANGELOG.md).
+**Versioning:** the account rule. The README masthead, this Status block, How to Cite, `CITATION.cff`, the CHANGELOG head and the release tag move together; `BUILD.md`, `PRINCIPLES.md`, `instructions.md` and `tests.md` keep the version line of the release that last changed them, stated in each file's own header. Every change is logged in [CHANGELOG.md](CHANGELOG.md).
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.2.8. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.2.9. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 

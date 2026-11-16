@@ -4,6 +4,20 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.2.9] - 2026-11-16
+
+Patch release. The improvement rotation's RedCap-01 slot of 16 November 2026 (KST), cycle 3 row 2: the documentation findings of the account review of 10 November 2026, tested against v1.2.8 and approved by Michael Paik that day (ruling R1). No change to `instructions.md` or its fenced block (SHA-256 `5225497c...e84ecd`, 4,807 characters, rechecked this day); the block's work, with the worked example and a test suite with literal inputs, is v1.3.0. Acceptance unchanged: not accepted. Prepared with Claude, approved by Michael Paik.
+
+- **Naming.** The account is "the rolldabones governance ecosystem"; GRCnext™ is its framework. README masthead, What this is, Design commitments, Reference and attribution and Status; `BUILD.md` header, section heading and development step; `PRINCIPLES.md`; `CONTRIBUTING.md`; the template footer. The block's two uses change in v1.3.0. The GitHub description changes with this release.
+- **Currency.** README: *From Guidance to Action* re-verified on coso.org on 16 November 2026 (the publication page and the ERM guidance page) and stated as the newest document on that page, in place of "COSO's current supplemental ERM guidance"; the press release, which names the three authors of Crowe LLP, read the same day.
+- **Acceptance.** README Change control, `BUILD.md` and `CONTRIBUTING.md` say a logged run must meet ACCEPTANCE.md. `BUILD.md`'s "Acceptance criteria" becomes "Success criteria", with a line pointing to `tests.md` for the block's acceptance. `tests.md` names T10 a critical case with T4 and T5 (ruling R4).
+- **Status lines.** README and `BUILD.md` Status lines no longer carry the retirement date, which the guard read as a verification date (account-maintenance `OPEN-ITEMS.md` item 35; ruling of 10 November 2026).
+- **Test record.** `tests.md`: the T8 and T9 rows state the pass conditions run T5 actually scored; "principle 7" names both its homes; T7 and T11 gain session-review notes (T7's "Both 2025 decisions" is an invented year; under ruling R3 the next run scores "Never invent facts" in every case).
+- **Template.** `Objective-Decision-Assessment.md` gains an accountable-owner field, and its Reviewer Statement places final decisions with that named owner, not with "management and the governing body".
+- **Prose.** README and `BUILD.md` governing questions in the block's wording; `BUILD.md` marks its summary of the COSO paper as the author's reading, restates its release policy as practiced (patch for documentation, minor for the block or templates, major for the method) and closes "It is built to ask one question well."; `PRINCIPLES.md` bolds the doctrine names and states its purpose in one sentence, its ten principles unchanged.
+- **Versioning.** `PRINCIPLES.md` joins the files that keep their own version line; README, Status, How to Cite, `CITATION.cff`, `BUILD.md`, `PRINCIPLES.md` and `tests.md` headers to v1.2.9.
+- Struck after testing, no change: the block hash finding (it reproduces), the LICENSE closing line (account convention), "licence" in shipped history, UK spelling (the account writes US English), the two casings of "Insufficient evidence" (both are the block's own), the D2 line references (all verified).
+
 ## [1.2.8] - 2026-11-09
 
 Patch release. Train D of the improvement rotation (review of 24 October 2026). Prepared with Claude, approved by Michael Paik.

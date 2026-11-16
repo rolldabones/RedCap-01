@@ -1,14 +1,14 @@
 # RedCap-01 Principles
 
-**Version:** 1.1.7
+**Version:** 1.2.9
 
-**Date:** 17 October 2026
+**Date:** 16 November 2026
 
 **Repository:** RedCap-01
 
 **Method:** Objective-to-Risk Alignment Check
 
-The three doctrines, Slow AI, Informed Intent and Final Liability rests with the Human, are used in this repository as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement. Where this repository restates a doctrine, it restates it at its own altitude and adds instruments, not doctrine. That is the doctrine delta rule ([ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) protocol item 6): restating a doctrine at a different altitude is permitted; varying the rule is not. The ten principles below are the method principles of this diagnostic; they are not doctrine and vary none.
+The three doctrines, **Slow AI**, **Informed Intent** and **Final Liability rests with the Human**, are used in this repository as stated in [DOCTRINE.md](https://github.com/rolldabones/rolldabones/blob/main/DOCTRINE.md), the account's single normative statement. Where this repository restates a doctrine, it restates it at its own altitude and adds instruments, not doctrine. That is the doctrine delta rule ([ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md) protocol item 6): restating a doctrine at a different altitude is permitted; varying the rule is not. The ten principles below are the method principles of this diagnostic; they are not doctrine and vary none.
 
 *Amendment note, 17 October 2026 (KST): renamed from `DOCTRINE.md` to `PRINCIPLES.md`, the title "RedCap-01 Doctrine" and the heading "The Doctrine" now read "Principles", and the citation line above is added, so that the account carries one file named DOCTRINE.md (Michael Paik's decision of 15 October 2026). The ten principles are unchanged word for word.*
 
@@ -18,13 +18,7 @@ The three doctrines, Slow AI, Informed Intent and Final Liability rests with the
 
 RedCap-01 exists to determine whether Enterprise Risk Management (ERM) improves the decisions that determine whether organizational objectives are achieved.
 
-It is intentionally narrow.
-
-It is not an ERM framework.
-
-It is not a maturity model.
-
-It is a practical diagnostic.
+It is intentionally narrow: a practical diagnostic, not an ERM framework or a maturity model.
 
 ---
 
@@ -126,7 +120,7 @@ RedCap-01 will remain:
 - auditable
 - conservative about uncertainty
 - lightweight
-- complementary to the GRCnext™ ecosystem
+- complementary to the other repositories in the ecosystem
 
 Future versions should strengthen these characteristics rather than expand the repository's scope.
 
@@ -156,7 +150,7 @@ Ryan Luttenton, Stefany Samp and Alexa Stone,
 
 Committee of Sponsoring Organizations of the Treadway Commission (COSO), 2026.
 
-It operationalizes these ideas within the GRCnext™ ecosystem while remaining an independent method.
+It operationalizes these ideas within the rolldabones governance ecosystem while remaining an independent method.
 
 ---
 

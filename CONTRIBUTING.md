@@ -32,13 +32,13 @@ Contributions should be:
 
 ## Please avoid
 
-- duplicating existing GRCnext™ repositories
+- duplicating other repositories in the ecosystem
 - unnecessary complexity
 - unsupported claims
 - excessive scoring systems
 - documentation for its own sake
 
-The instruction block in [`instructions.md`](instructions.md) is the text of record; the custom GPT it came from was retired on 1 October 2026 and its configuration is Locked. Changes to the block are welcome as proposals for the instrument. A proposal is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in [`tests.md`](tests.md), and ships in a repository release.
+The instruction block in [`instructions.md`](instructions.md) is the text of record; the custom GPT it came from was retired on 1 October 2026 and its configuration is Locked. Changes to the block are welcome as proposals for the instrument. A proposal is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in [`tests.md`](tests.md), and ships in a repository release.
 
 ## Pull requests
 

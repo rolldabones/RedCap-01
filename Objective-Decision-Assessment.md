@@ -8,6 +8,8 @@
 
 **Reviewer:** ______________________
 
+**Accountable owner (name, role and decision rights):** ______________________
+
 **Date:** ______________________
 
 **Scope:** Strategic Objective / Initiative / Program / Portfolio
@@ -277,12 +279,12 @@ Unknown or unsupported matters have not been inferred.
 
 This assessment is advisory only.
 
-Final decisions remain the responsibility of management and the governing body.
+Final decisions rest with the accountable owner named above, within the decision rights stated there.
 
 ---
 
 **RedCap-01**
 Objective-to-Risk Alignment Check
-Part of the GRCnext™ ecosystem.
+Part of the rolldabones governance ecosystem.
 
 **Final Liability rests with the Human.**

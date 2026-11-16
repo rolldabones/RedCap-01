@@ -1,10 +1,10 @@
 # Building RedCap-01
 
-**Version:** 1.2.4
-**Date:** 20 October 2026
-**Status:** Instrument; the custom GPT was retired on 1 October 2026
+**Version:** 1.2.9
+**Date:** 16 November 2026
+**Status:** Instrument; formerly a custom GPT (see Build history)
 **Repository:** RedCap-01
-**Part of:** GRCnext™
+**Part of:** the rolldabones governance ecosystem
 
 ---
 
@@ -12,7 +12,7 @@
 
 RedCap-01 was created to answer one practical question:
 
-> **Does our Enterprise Risk Management (ERM) improve the decisions that determine whether we achieve our objectives?**
+> **Does Enterprise Risk Management (ERM) improve the decisions that determine whether organizational objectives are achieved?**
 
 Many ERM programs produce extensive documentation. Far fewer demonstrably improve organizational decisions.
 
@@ -30,7 +30,7 @@ Instead, it complements them.
 
 ## Why this repository exists
 
-The 2026 COSO paper *From Guidance to Action: Exploring Practical Enterprise Risk Management* argues that:
+In the author's reading (a summary, not a quotation), the 2026 COSO paper *From Guidance to Action: Exploring Practical Enterprise Risk Management* argues that:
 
 - strategy and risk are inseparable
 - risk exists only in relation to objectives
@@ -58,7 +58,7 @@ Everything in this repository supports answering that question.
 
 ---
 
-## Relationship to GRCnext™
+## Relationship to the ecosystem
 
 RedCap-01 complements existing repositories in governance, risk management and compliance (GRC).
 
@@ -124,7 +124,7 @@ It asks users to demonstrate:
 
 The repository was developed by:
 
-1. Reviewing the GRCnext™ ecosystem.
+1. Reviewing the repositories in the ecosystem.
 2. Identifying capability overlap.
 3. Defining one missing capability.
 4. Studying the COSO 2026 guidance.
@@ -181,7 +181,9 @@ The tool inherits every limitation stated in the README: it is not legal advice,
 
 ---
 
-## Acceptance criteria
+## Success criteria
+
+Acceptance of the instruction block is a separate test, recorded in [`tests.md`](tests.md) under [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md).
 
 RedCap-01 succeeds when users can:
 
@@ -198,21 +200,23 @@ RedCap-01 succeeds when users can:
 
 ## Versioning philosophy
 
-Minor releases:
+Patch releases:
 
 - documentation
-- prompt refinements
-- templates
+- records
 - examples
+
+Minor releases:
+
+- changes to the instruction block
+- changes to the templates
 
 Major releases:
 
-- assessment logic
-- method changes
-- governance model
-- acceptance criteria
+- changes to the assessment method
+- changes to the governance model
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026. A change to the instruction block in `instructions.md` requires a repository release in the same cycle and is accepted only after one logged run of the published instructions as a system prompt on a current frontier model, recorded in `tests.md`.
+The RedCap-01 GPT configuration is Locked as of 1 October 2026. A change to the instruction block in `instructions.md` requires a repository release in the same cycle and is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in `tests.md`.
 
 ---
 
@@ -222,7 +226,7 @@ RedCap-01 is intentionally modest.
 
 It does not attempt to solve Enterprise Risk Management.
 
-It asks one question exceptionally well.
+It is built to ask one question well.
 
 > **Does Enterprise Risk Management improve the decisions that determine whether organizational objectives are achieved?**
 
