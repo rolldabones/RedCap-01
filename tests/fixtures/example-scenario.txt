@@ -1,0 +1,19 @@
+Please assess our ERM with RedCap-01. This is the fictional scenario of the RedCap-01 Example Assessment, stated as facts; it is not based on any real organization.
+
+Objective: increase regional revenue by 20% within 24 months through expansion into a new regional market, while maintaining profitability and service quality. Owner: Chief Executive Officer. Success measures: revenue growth, customer retention, gross margin, time to market.
+
+The organization has a documented ERM program and executive reporting.
+
+Critical decisions: (1) enter the market: risk was reviewed after the investment recommendation had been made; (2) select a local partner: vendor due diligence influenced the selection and prevented the choice of a higher-risk partner; (3) allocate capital: financial scenarios were prepared but not linked to risk appetite; (4) launch timing: no predefined triggers for delay or acceleration.
+
+Assumptions: regulatory approvals obtained on schedule (moderate confidence); local partner performs as expected (moderate confidence); supply chain capacity available (high confidence). No formal process exists to monitor assumption drift.
+
+Uncertainty: three scenarios were identified. Expected: regulatory approval within six months. Downside: approval delayed by twelve months, increasing cost and reducing projected return. Upside: accelerated approval enables earlier launch and first-mover advantage. Discussion focused on likelihood scores rather than management actions under each scenario.
+
+Risk appetite: the organization has a "moderate appetite for expansion". No measurable definition exists.
+
+Triggers: informal; none are defined with a response.
+
+Operating rhythm: ERM appears in quarterly reporting and regular board reporting, but not consistently in investment committee meetings, transformation governance or monthly performance reviews.
+
+Other evidence: a cybersecurity review identified integration weaknesses before implementation. Executive sponsorship exists and vendor risk practices are good. Evidence is limited that ERM materially influenced the initial market-entry decision.

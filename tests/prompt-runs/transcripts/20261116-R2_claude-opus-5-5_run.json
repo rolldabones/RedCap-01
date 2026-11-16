@@ -1,0 +1,130 @@
+{
+  "stamp": "20261116-R2",
+  "model_requested": "claude-opus-5-5",
+  "max_tokens": 32000,
+  "prompt_file": "instructions.md",
+  "prompt_proper_sha256": "28f5383db3ea4d111ff35c422a40f8f5e71a5afb6923b9956e65c7605bde0afb",
+  "prompt_characters": 7408,
+  "attachments": "none",
+  "started_kst": "2026-11-16T12:12:49+09:00",
+  "transcripts": [
+    {
+      "case": "T1",
+      "file": "20261116-R2_claude-opus-5-5_T1.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2670,
+      "output_tokens": 5110
+    },
+    {
+      "case": "T2",
+      "file": "20261116-R2_claude-opus-5-5_T2.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 3477,
+      "output_tokens": 10233
+    },
+    {
+      "case": "T3",
+      "file": "20261116-R2_claude-opus-5-5_T3.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 3515,
+      "output_tokens": 11847
+    },
+    {
+      "case": "T4",
+      "file": "20261116-R2_claude-opus-5-5_T4.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2709,
+      "output_tokens": 6478
+    },
+    {
+      "case": "T5",
+      "file": "20261116-R2_claude-opus-5-5_T5.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2600,
+      "output_tokens": 1173
+    },
+    {
+      "case": "T6",
+      "file": "20261116-R2_claude-opus-5-5_T6.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2809,
+      "output_tokens": 8466
+    },
+    {
+      "case": "T7",
+      "file": "20261116-R2_claude-opus-5-5_T7.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2785,
+      "output_tokens": 7296
+    },
+    {
+      "case": "T8",
+      "file": "20261116-R2_claude-opus-5-5_T8.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2792,
+      "output_tokens": 8805
+    },
+    {
+      "case": "T9",
+      "file": "20261116-R2_claude-opus-5-5_T9.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2754,
+      "output_tokens": 7111
+    },
+    {
+      "case": "T10",
+      "file": "20261116-R2_claude-opus-5-5_T10.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 3483,
+      "output_tokens": 10311
+    },
+    {
+      "case": "T11",
+      "file": "20261116-R2_claude-opus-5-5_T11.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 3477,
+      "output_tokens": 11575
+    },
+    {
+      "case": "T12",
+      "file": "20261116-R2_claude-opus-5-5_T12.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 3183,
+      "output_tokens": 8731
+    },
+    {
+      "case": "T13",
+      "file": "20261116-R2_claude-opus-5-5_T13.md",
+      "model_returned": "claude-opus-5-5",
+      "stop_reason": "end_turn",
+      "truncated": false,
+      "input_tokens": 2809,
+      "output_tokens": 7730
+    }
+  ],
+  "finished_kst": "2026-11-16T12:29:34+09:00"
+}

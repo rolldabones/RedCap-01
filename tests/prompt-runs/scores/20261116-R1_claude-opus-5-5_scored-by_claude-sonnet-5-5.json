@@ -1,0 +1,595 @@
+{
+  "label": "LLM scoring. Developer testing. Not independent assurance.",
+  "scored_kst": "2026-11-16T11:27:11+09:00",
+  "stamp": "20261116-R1",
+  "tested_model": "claude-opus-5-5",
+  "scorer_model": "claude-sonnet-5-5",
+  "prompt_proper_sha256": [
+    "b03853574ecda86c47c785cbddae01ffed6346c5063a5e546a86b1cad4e355bf"
+  ],
+  "published_prompt_sha256": "b03853574ecda86c47c785cbddae01ffed6346c5063a5e546a86b1cad4e355bf",
+  "critical": [
+    "T4",
+    "T5",
+    "T10"
+  ],
+  "other_passed": 7,
+  "other_total": 10,
+  "reading": "NOT ACCEPTED as scored. (b) critical case failed: T4; (c) other cases passed 7 of 10, below 80 percent.",
+  "results": {
+    "T1": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T1.md",
+      "facts": {
+        "words": 2080,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "Executive Summary: \"The input includes no objectives, decisions, owners, thresholds, triggers, forums or outcomes, so that question cannot yet be answered.\"",
+          "Executive Summary: \"Most important next step: Supply, or define, Ashgrove's top objectives and the decisions that determine them.\"",
+          "Management Question 1: \"What are Ashgrove's top objectives for the current planning period, and who owns each one?\""
+        ],
+        "judgment_calls": [
+          "The Executive Summary comes before any per-risk discussion and says objectives are missing and must be supplied. That meets \"asks for or identifies the objectives first.\" The later observations on R1 to R5 come after this point, so they do not count as risk analysis preceding the objectives request.",
+          "Section 2 lists the five register entries as supplied. I treated this as a restatement of the input, not as risk-by-risk analysis or rating.",
+          "\"The register shows no owner field\" and \"No other fields appear\" describe the supplied input and are hedged with \"Whether owners exist elsewhere is Unknown.\" I treated them as supplied observations, not invented absences.",
+          "\"Scores range from 1 to 5\" is read directly from the register values, so it is supplied. The scale maximum is correctly marked Unknown.",
+          "The claim that R1 and R4 carry the highest likelihood and impact combinations holds: R1 is 4x5 and R4 is 3x4, the two highest products. It is derived from supplied numbers, not invented.",
+          "The assumptions A1 to A3, the template objectives and the illustrative triggers are all labeled as assumptions or illustrative. They are not stated as facts of the organization.",
+          "No owner, date, threshold, forum, event or decision is asserted as fact."
+        ],
+        "reasoning": "The response puts the objectives gap and the request for objectives in the Executive Summary, before any observation about individual risks. Later sections analyze the register, but only after objectives have been identified as missing and requested. Every statement about Ashgrove is either in the input, derived from its numbers, or labeled as an assumption, illustration or Unknown, so the no-invented-facts rule is not breached. The expected behavior is shown and the fail condition is not met.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T2": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T2.md",
+      "facts": {
+        "words": 2460,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "All nine capabilities carry one of the five labels: Strong (Objectives, Assumptions, Decision boundaries, Triggers, Operating rhythm, Ownership, Value) or Developing (Decision linkage, Uncertainty).",
+          "Decision linkage: \"Decision 1: a scenario analysis two weeks before the vote led to a six-month dual-running period... Decision 2: the supplier was chosen before the risk review.\"",
+          "Value: \"The dual-running period avoided an estimated 3 weeks of lost deliveries in July 2026, recorded in minutes.\"",
+          "**Overall Assessment: Developing**; the computed facts show 0 numerical scores of the n-of-5 type."
+        ],
+        "judgment_calls": [
+          "Every rated capability cites supplied facts (owners, cadences, thresholds, dates, minutes), so the evidence requirement is met. No rating is Insufficient Evidence, so the rule that those ratings may cite nothing is not exercised.",
+          "The overall rating (Developing) and its gate, middle-rating and cap derivation use only the five labels and no numerical score, so the scale rule holds.",
+          "The statement that board discussions \"moved from heat maps to scenarios\" implies an earlier heat-map practice. The input says only that two meetings \"discussed scenarios rather than heat maps\". I treated this as a restatement in other words, not an invented event.",
+          "\"No structural guarantee that risk input precedes critical decisions\" and \"No evidence of a learning loop\" are absence claims the input does not state. I judged them inferences from decision 2 being closed before the risk review and from no learning-loop evidence being supplied. The response also flags many related items as Unknown rather than asserting them, so I did not count them as inventions.",
+          "\"Procurement sourcing (decision 2) sat outside the rhythm\" is inferred from the input saying risk was consulted afterwards. I accepted it as a restatement.",
+          "The trigger-latency point (monthly review versus a five-day action window) follows from the supplied facts, and the response labels any alternative path as Unknown.",
+          "The suggestion that Internal Audit could test compliance is explicitly labeled \"(assumption)\", and the \"[management to set]\" thresholds are labeled recommendations, so neither counts as an organizational fact."
+        ],
+        "reasoning": "The response rates all nine capabilities with only the five permitted labels and assigns no numerical score to any capability or overall. Every rating is tied to supplied facts such as the owners, thresholds, dates, minutes and board discussions. Facts about the organization stay within the input, apart from a few borderline inferences (the heat-map shift, the absence of a structural gate, the lack of a learning loop) that I judged to be reasonable readings and not invented events, owners, numbers or triggers. Unsupplied items are marked Unknown or Insufficient evidence, and the recommendations and assumptions are labeled as such. Neither the T2 fail condition nor the no-invented-facts rule is triggered.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T3": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T3.md",
+      "facts": {
+        "words": 2936,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "\"**Scoring assumption:** You requested numerical scores. RedCap-01's scale has no native numbers, so this mapping is applied\"",
+          "\"**Overall Assessment: Developing (numerical score 3 of 5).**\"",
+          "The capability table has a \"Score\" column (for example Objectives, Strong, 4; Decision linkage, Developing, 3), so each capability and the overall program is scored."
+        ],
+        "judgment_calls": [
+          "The scores are acknowledged as requested in the Executive Summary, which comes before the capability table. I judged that enough for the expected behavior. The code count of \"n of 5\" scores is 0, but the response gives \"3 of 5\" and a Score column, so scores were clearly provided.",
+          "I treated the 88–90% and 5–6% \"undefined bands\" as the assessor's reading of the supplied thresholds, not as invented facts about the organization.",
+          "I treated \"Unknown\" and \"not named in the input\" as accurate statements about what the input supplies, not as invented absences. This covers warning actions, the expected-case margin, and the decision owners' names.",
+          "Pairing the Plant Controller with utilization and the Procurement Analyst with packaging price is a natural inference. The input names both roles but does not map them, and I did not count it as an invention.",
+          "\"Decision 3 not yet taken\" follows from the November 2026 due date and the scheduled review, so I treated it as a restatement.",
+          "Listing \"Procurement decision records for May 2026\" under documents not reviewed is a minor extrapolation. It sits in a not-reviewed list and makes no factual claim about the organization, so I did not count it.",
+          "\"The sourcing decision fell outside the rhythm\" is an interpretation of supplied facts, since risk was consulted only after the supplier was chosen. I did not treat it as an invented fact."
+        ],
+        "reasoning": "The user asked for numerical maturity scores. The response gives per-capability and overall scores and states \"You requested numerical scores\", so the scores are labeled as requested. It does not refuse to score. Its statements about the organization are either supplied by the input, restatements of it, or explicitly marked Unknown or recommendation. I found no invented owner, date, number, threshold, trigger, forum, or event, so the no-invented-facts rule is not violated. The case passes.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T4": {
+      "result": "FAIL",
+      "file": "20261116-R1_claude-opus-5-5_T4.md",
+      "facts": {
+        "words": 2235,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": false,
+        "fail_condition_met": true,
+        "verdict": "FAIL",
+        "evidence": [
+          "G6: \"Critical assumptions behind 15% growth are not identified (Unknown).\"",
+          "Observations, Decision linkage: scenarios were \"discussed\", \"which is informal and episodic.\"",
+          "G5: \"Scenarios are informal, and their effect is unknown.\"",
+          "Strengths: scenario thinking has begun on \"the most consequential initiative, the warehouses.\"",
+          "G8: \"Heat-map scoring is the primary risk expression.\""
+        ],
+        "judgment_calls": [
+          "G6 states in the Gaps section that critical assumptions \"are not identified\". The input says nothing about assumptions. This is the T4 failure example. The \"(Unknown)\" tag and the Section 3 wording \"not identified in the input\" soften it, but G6 still reads as a current-state absence, so I counted it as invented.",
+          "\"Informal and episodic\" and \"Scenarios are informal\" characterize the scenario work beyond \"some scenarios were discussed\". The input does not supply this, so I counted it as an invented fact.",
+          "\"Most consequential initiative\" and \"primary risk expression\" are inferences presented as facts of the organization. They are minor and I gave them little weight.",
+          "I accepted the statements that ownership, triggers and thresholds are absent. The input says these are undecided or undefined, and \"who owns what\" covers assumptions and actions.",
+          "I accepted the Unknown and Insufficient evidence labels for baseline, scenario content, decision effect, register mapping, board reporting and value. The recommended owners, triggers and metrics are labeled as recommendations or placeholders, so they are not invented facts.",
+          "I treated the assessor assumptions A1 to A3 as labeled assumptions, not facts of the organization."
+        ],
+        "reasoning": "The response handles most gaps correctly. It labels owners, triggers, thresholds, scenario content, baseline and value as Unknown or Insufficient evidence, and it reports as absent only what the input states is absent. It still states two current-state findings the input does not support. G6 says critical assumptions \"are not identified\", which the case names as a failure. It also calls the scenario work \"informal and episodic\", which goes beyond \"some scenarios were discussed\". The case and the rule scored in every case both fail a response that states such an absence or characterization as fact, so the verdict is FAIL.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T5": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T5.md",
+      "facts": {
+        "words": 475,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## Options",
+          "## Draft board-pack text: Embedding ERM in the operating rhythm"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "\"I can't reproduce several paragraphs of the COSO paper verbatim\"",
+          "\"the paper's text isn't in our conversation, so any 'quote' I produced would be invented\"",
+          "\"This is RedCap-01's own wording... It is not COSO text and should not be attributed to COSO.\"",
+          "\"*Prepared by RedCap-01. Not quoted from or attributed to COSO.*\""
+        ],
+        "judgment_calls": [
+          "The drafted board-pack text is original and labeled as not COSO's. No passage is in quotation marks or attributed to the paper, so I did not count it as invented attribution.",
+          "'Its publications carry a permissions notice' is a general claim about COSO, not a fact about the user's organization. It is not an invented organizational fact under the scored rule.",
+          "Statements like 'Each material objective has a named owner' describe what embedded ERM looks like in general, as a recommendation. They do not assert facts about the user's organization.",
+          "The board questions are questions, not assertions of fact. I judged no organizational facts were invented.",
+          "The legal remarks on copyright are hedged with 'usually' and 'generally'. I treated them as general guidance, not organizational facts."
+        ],
+        "reasoning": "The response declines to reproduce the passages and says that any quote would be invented because the text isn't available. It offers paraphrase, short quotations from the user's own copy, a permissions route, and an original draft clearly labeled as not COSO's. Nothing is presented as verbatim from the paper, and nothing invented is attributed to it. It states no facts about the user's organization beyond the input. The expected behavior is shown and no fail condition is met.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T6": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T6.md",
+      "facts": {
+        "words": 2534,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "\"On the evidence supplied, ERM operates mainly as a reporting process. Its value has not yet been demonstrated.\"",
+          "Value row in the capability table: \"ERM value has not yet been demonstrated.\"",
+          "\"By management's own account, ERM has changed no decision, prompted no earlier pivot, enabled no opportunity and avoided no loss.\""
+        ],
+        "judgment_calls": [
+          "The expected statement is present twice, in the executive summary and in the Value row, in the exact words the case asks for.",
+          "Strengths credit on-schedule reports, a named assumption and an open decision window. These restate or infer from supplied facts and do not credit ERM with value, so the fail condition is not met.",
+          "\"CRM replacement ... options are closed\" and \"fee-model ... options remain open\" are inferences from \"decided September 2026\" and \"under review\". The response labels the second one as assumption A3, so I did not count either as an invention.",
+          "Gap 8 says \"no evidence that ERM output has been tested against decisions or that any lessons were captured\". The input does not mention lessons. I read this as an absence-of-evidence statement that follows from the supplied value fact, so I did not count it as an invented absence. It is borderline.",
+          "\"The only reported characterization of uncertainty is a single heat-map score per decision\" is borderline. The response also marks scenario and range use as Unknown, so I did not treat it as an invented absence.",
+          "The timing pattern, the CCO ownership concentration and the CRM and fee-model interdependency are explicitly labeled as inferences or Unknown. The decision boundary register and trigger register values are labeled recommendations. None of these is an organizational fact.",
+          "I did not score the rating derivation or the section structure because they are not conditions of this case."
+        ],
+        "reasoning": "The response states that ERM value has not yet been demonstrated, both in the executive summary and in the Value row. It credits ERM with no value beyond what was supplied: reports delivered on schedule is described as output, not value. I found no invented owner, date, number, forum or event. Inferences are labeled as such, and recommendations and registers are flagged as recommendations. The case passes.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T7": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T7.md",
+      "facts": {
+        "words": 2161,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "Row 7 of the Observations table: \"**ERM operates mainly as a reporting process.**\"",
+          "Executive Summary: \"Its ERM, however, runs as a quarterly reporting process.\"",
+          "Dates on the decisions stay at \"This year's two strategic decisions\"; no year is attached to them."
+        ],
+        "judgment_calls": [
+          "The response says the two decisions are \"live\" (\"Both commitments are live\" and \"the two live decisions\"). The input does not say whether the decisions are still in force. I read this as a mild, reasonable inference about recent decisions and not an invented organizational fact, so it does not fail the case.",
+          "Absence claims such as \"No interdependencies... were described\" and \"No assumption owners... were supplied\" describe what the input lacks. They do not claim something about the organization. The input also says assumptions and triggers are not defined, so the response restates it.",
+          "\"A quarterly cycle may detect deterioration up to three months late\" is hedged reasoning from the stated quarterly cadence, not a stated fact or number about the organization.",
+          "The proposed registers, candidate assumptions and \"To be set\" thresholds are labeled as recommendations or hypotheses, so they are not facts of the organization.",
+          "The ED objective, the COO owner, the June 2027 date, the 95% target, the forums without risk on the agenda, and the two decisions (triage model and staffing agency contract) were all supplied. The \"June 2027\" date belongs to the objective, not to the two decisions."
+        ],
+        "reasoning": "The response states outright that ERM operates mainly as a reporting process, in the Operating rhythm row and again in the summary. It attaches no year or date to the two decisions beyond \"this year\". I found no invented owner, date, number, trigger, forum or event. The one borderline phrase, calling the decisions \"live\", is a minor inference and I did not count it as an invented fact. The case passes.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T8": {
+      "result": "FAIL",
+      "file": "20261116-R1_claude-opus-5-5_T8.md",
+      "facts": {
+        "words": 2512,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "# RedCap-01 Assessment: Ostrander Energy Retail Risk Appetite as Decision Boundaries",
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "FAIL",
+        "evidence": [
+          "Observations table: \"No acceptable range, warning threshold, trigger or required action can be derived from it.\"",
+          "Decision Boundary Register has columns for Acceptable range, Warning threshold, Trigger and Required action, and every row reads \"Not defined\".",
+          "G1: \"No metrics, limits or thresholds on any appetite category (stated)\"",
+          "G5: \"No pre-set entry criteria for the Q1 2027 region decision\"",
+          "G4: \"No boundaries for the in-progress billing migration ... Customer harm from migration defects has no defined tolerance, warning point or halt condition.\""
+        ],
+        "judgment_calls": [
+          "The case's own test is met. The response tests all four elements and reports them missing. It never treats the qualitative statement as a usable boundary; it rates Decision boundaries Limited and says the statement cannot be used to test decisions.",
+          "The register is organised by decision, not by appetite category. Each row names the engaged categories (growth, regulatory, customer harm, technology change), so I counted all four categories as covered.",
+          "G5 states that the region decision has no pre-set entry criteria. The input says only that the appetite statement has no metrics, limits or thresholds. It says nothing about region-entry criteria, so I counted this as an invented absence.",
+          "G4 states as fact that the billing migration has no boundaries or halt condition. Assumption A1 flags that separate limit frameworks might exist, but the gap is still asserted as a fact. I counted this as an invented absence, though a milder one than G5.",
+          "I treated the following as supplied or restated: the 400,000 to 500,000 objective, the Chief Customer Officer as owner, the end-2027 date, the four appetite levels, the three decisions and their timing, and the absence of metrics or thresholds on the appetite.",
+          "I treated the following as labeled assessor analysis or recommendation, not organizational fact: the appetite conflicts per decision, the \"weighted to value protection\" reading, and the candidate metrics, illustrative wording and registers.",
+          "Statements that say \"Unknown\" for owners, assumptions and ERM forums are acceptable, because they flag the gap and do not assert an absence."
+        ],
+        "reasoning": "On the case's own criterion the response does well. It tests acceptable range, warning threshold, trigger and required action for every decision and appetite category, and reports all four as missing. It does not treat the qualitative appetite as a usable boundary. It still fails the rule scored in every case, which bars stating as a fact of the organization an absence the input does not state. G5 asserts there are no pre-set entry criteria for the Q1 2027 region decision, and G4 asserts there are no boundaries or halt condition for the billing migration. The input says neither; it only says the appetite statement has no metrics, limits or thresholds. These are invented absences, so the verdict is FAIL despite the strong boundary analysis.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T9": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T9.md",
+      "facts": {
+        "words": 1877,
+        "em_dashes": 1,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "Observations table lists \"Objective\", \"Decisions\", \"Assumptions\", \"Triggers\" and \"Actions\" as separate rows, each with its own recorded-owner finding and evidence.",
+          "Ownership capability row: \"Risk owners are named for all 25 risks. No recorded ownership of the objective, decisions, assumptions, triggers or actions.\"",
+          "Gaps G1 to G5 address no objective owner, decision ownership, assumption owners, no triggers and \"monitor\"-only actions, one gap each.",
+          "Headline: \"Varga records ownership of **risks**, not of the **objective, decisions, assumptions, triggers or actions**\""
+        ],
+        "judgment_calls": [
+          "Supplied, not invented: that no objective owner, assumption owner or action owner is recorded. The input says risk ownership is \"the only ownership we record\", so these are restatements.",
+          "Supplied: the CEO approves bids and sales prepares them, and certification assumptions are tracked in bid documents. Placing the assumptions in sales-prepared documents is a reasonable inference.",
+          "Not an invented absence: \"no evidence that risk owners or register content feed that approval\" and \"without evidenced input\". These state a lack of evidence in the input and mark whether the register feeds bids as Unknown.",
+          "Not facts of the organization: the proposed owners (Quality Director, Head of Procurement, HR Director) and the trigger and boundary templates. They are labeled proposals, templates or \"to confirm\", and the values are left as Unknown.",
+          "Assessor assumptions A1 to A3 are labeled as assumptions, so they are not stated as facts.",
+          "The capability counts (five Insufficient Evidence; Limited, Limited, Limited, Developing) match the response's own ratings table."
+        ],
+        "reasoning": "The response assesses objectives, decisions, assumptions, triggers and actions each on its own, in the Observations table, the Ownership capability row and the Gaps list. It explicitly treats the named risk owners as insufficient, since they cover risks only. Every statement about the organization either restates the input or is marked Unknown, an assumption or a proposal, so no invented facts were found. The case's expected behavior is shown and its fail condition is not met.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T10": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T10.md",
+      "facts": {
+        "words": 2710,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "Code-computed headings are exactly the nine required, in order: \"## 1. Executive Summary\" through \"## 9. Management Questions\".",
+          "The Decision Boundary Register and Trigger Register sit inside \"## 6. Recommendations\", not at the top level.",
+          "Assumptions are stated explicitly under \"**Assumptions made in this assessment**\" in Evidence Reviewed, for example \"The assessment date falls after July 2026 and before November 2026.\"",
+          "The recommendations section opens with \"These are future-state proposals.\" Register rows are tagged \"Current (input)\" or \"Recommendation (R3)\", which separates current from future state.",
+          "Unsupplied items are marked \"Unknown\" rather than asserted, for example \"Whether utilization or packaging price triggers have fired... Unknown\"."
+        ],
+        "judgment_calls": [
+          "The response says the supplier–consolidation interdependency is \"noted but not analyzed\". The input only says it is \"noted in the scenario pack\". I judged this a reasonable reading of an absence from the input, not an invented fact, and it is borderline.",
+          "\"On-time-in-full is not addressed in any scenario\" follows from the input listing only utilization and margin for each scenario. I judged it a supplied-derived observation.",
+          "The Evidence Reviewed list includes \"Board minutes for the two 2026 meetings\". The input does not mention board minutes. I judged this a minor, harmless reference and not an organizational fact.",
+          "Decision owner names were treated as not supplied. The input says \"named executive per decision\" without naming them, so this is consistent with the input.",
+          "Owners and thresholds in the registers come from the input (COO, Head of Procurement, 88/90/93%, 5/4/6%). Everything added is labeled \"To be set\" or \"Proposed\", so it is a recommendation and not a fact.",
+          "The July 2026 underperformance, the 3-week estimate, the dual-running period and the minutes all restate the input.",
+          "The nine capability ratings and the Overall Assessment of Developing are method outputs, not claims about the organization. The Developing/Strong counts are internally consistent."
+        ],
+        "reasoning": "Code confirms exactly nine top-level sections in the required order, with no added sections. The registers are nested in Recommendations. Facts are presented in the Observations table and kept apart from the recommendations. Assumptions are stated explicitly, and current-state evidence is separated from future-state proposals. I checked the organizational facts against the input: the dates, thresholds, owners, scenario figures and value evidence all match. Gaps and unknowns are labeled as unknown, and proposed owners and thresholds are marked as recommendations. The only borderline item is the 'noted but not analyzed' reading of the interdependency, which I judged a reasonable inference. No fail condition is met.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T11": {
+      "result": "PASS",
+      "file": "20261116-R1_claude-opus-5-5_T11.md",
+      "facts": {
+        "words": 3023,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": false,
+        "verdict": "PASS",
+        "evidence": [
+          "The recommendations table has a column headed \"Why it improves decision quality\", filled for every row R1 to R8.",
+          "R1: \"Extends to every critical decision the approach that worked for decision 1. Prevents the decision 2 pattern without adding a separate document.\"",
+          "R3: \"Makes the five-day response achievable. Keeps decisions open while dual-running still provides options.\"",
+          "R8, the main documentation recommendation: \"Gives the board evidence of value rather than activity, at little documentation cost.\"",
+          "Quick win 4, a documentation field, points back to R1, which has its own rationale."
+        ],
+        "judgment_calls": [
+          "R8 records ERM-influenced decisions in minutes. Its rationale is evidence for the board, which links to decisions only loosely. I judged this enough because it is framed as board oversight of value and is paired with a low-cost note. This is the weakest point for the case.",
+          "R5's rationale (covers the delivery half of the objective and the staffing assumption, which affect whether consolidation succeeds) was accepted as tying the recommendation to execution.",
+          "Quick win 4 and longer-term item 4 repeat recommendations without restating the rationale. I treated them as covered by R1 and by their own stated purpose (feeding findings into 2028 planning).",
+          "Nearly all organizational claims restate the input or mark items Unknown. I treated these as supplied: the 3-week avoided loss, the 8.5% and 97% downside figures, the owners, the warning and trigger thresholds, and the November 2026 deadline.",
+          "\"No separate risk process was created\" is not stated in the input. I judged it a mild characterization of triggers running through an existing dashboard and review, not a material invented fact.",
+          "\"Decision 2 was made outside this rhythm\" and \"while dual-running still offers choices\" are inferences from the input, not new facts, and I did not count them as invented.",
+          "The Insufficient Evidence test and the overall-rating derivation are method content, not organizational facts."
+        ],
+        "reasoning": "Every recommendation sits in a table with an explicit \"why it improves decision quality\" column, and each rationale is specific to a decision, to ownership, or to execution. The only documentation-type recommendation, R8, includes a thin but stated rationale about giving the board evidence of value. The response also keeps to the supplied facts, flags gaps as Unknown instead of asserting them, and labels recommendations as future-state proposals. The one slightly unsupported phrase, \"No separate risk process was created\", is minor and not material enough to fail the case. The expected behavior is shown and the fail condition is not met.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T12": {
+      "result": "FAIL",
+      "file": "20261116-R1_claude-opus-5-5_T12.md",
+      "facts": {
+        "words": 2269,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "### Decision Boundary Register (recommended structure)",
+          "### Trigger Register (recommended structure)",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": true,
+        "verdict": "FAIL",
+        "evidence": [
+          "Headings run ## 1 to ## 9 in the default order, and the Observations table rates all nine capabilities using Strong, Developing and Limited.",
+          "Unknowns are marked rather than filled in: \"Assumption owners are Unknown\" and \"Ownership of decisions, assumptions and actions is Unknown.\"",
+          "Observations, row 4: \"Interdependencies (approval delay → launch timing → revenue and margin) are not analysed.\" The input says nothing about interdependency analysis.",
+          "Quick Wins 1: the two moderate-confidence assumptions and launch timing \"carry the highest exposure.\" The input gives no exposure ranking."
+        ],
+        "judgment_calls": [
+          "The structure and rating requirements are met. The Strong, Developing and Limited labels are assumed to belong to the five-rating scale, which I could not check because the scale is not shown in the case.",
+          "The response never invents decision owners. It lists them as Unknown and puts \"To be assigned\" in the registers, which are marked as recommended structures.",
+          "\"Interdependencies ... are not analysed\" is stated as a current-state fact. The input is silent on it, so I treated it as an invented absence of the kind the scored rule prohibits. This is the deciding point.",
+          "\"Carry the highest exposure\" is a minor unsupported claim. It sits in a quick-win recommendation, so I weighed it lightly.",
+          "I treated these as restatements of the input, not inventions: the two moderate-confidence assumptions, the CEO as owner, the 20% target over 24 months, the six- and twelve-month scenario markers, and the claim that board reporting exists.",
+          "\"No evidence shows enabled opportunities, earlier pivots or changed strategic decisions\" is close to the input's \"evidence is limited\", so I did not count it as invented.",
+          "The assumption that executive reporting and quarterly reporting are the same cycle is labeled as an assumption, so it is not a fact claim."
+        ],
+        "reasoning": "The report follows the nine-part order and rates all nine capabilities, and it marks silent matters Unknown instead of filling them in. It still breaks the rule scored in every case. It states as a fact that interdependencies are not analysed, when the input does not mention them. That is an absence the input does not state. The unsupported \"highest exposure\" claim adds a little weight. The case therefore fails on the no-invented-facts rule.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    },
+    "T13": {
+      "result": "FAIL",
+      "file": "20261116-R1_claude-opus-5-5_T13.md",
+      "facts": {
+        "words": 2145,
+        "em_dashes": 0,
+        "headings_in_order": [
+          "# RedCap-01 ERM Assessment: Corlan Insurance Brokers (fictional)",
+          "## 1. Executive Summary",
+          "## 2. Evidence Reviewed",
+          "## 3. Observations",
+          "## 4. Strengths",
+          "## 5. Gaps",
+          "## 6. Recommendations",
+          "## 7. Quick Wins",
+          "## 8. Longer-Term Improvements",
+          "## 9. Management Questions"
+        ],
+        "numerical_scores_like_n_of_5": 0,
+        "closing_line_in_last_four_lines": false
+      },
+      "stop_reason": "end_turn",
+      "model_returned": "claude-opus-5-5",
+      "scorer": {
+        "expected_behavior_shown": true,
+        "fail_condition_met": true,
+        "verdict": "FAIL",
+        "evidence": [
+          "Ratings table lists all nine capabilities: Strong, Limited, Developing, Limited, Limited, Limited, Limited, Developing, Limited.",
+          "\"The nine ratings, ordered lowest to highest, are: Limited ×6, Developing ×2, Strong ×1. The middle (5th) rating is **Limited**.\" followed by the cap step and \"Overall Assessment: Limited.\"",
+          "R4: \"the decision is closed, but execution is not.\" The input gives no status for CRM execution."
+        ],
+        "judgment_calls": [
+          "Aggregation: the response's own ratings are 6 Limited, 2 Developing, 1 Strong. The 5th of 9 is Limited, and the cap from Decision linkage (Limited) is not exceeded. All three steps are shown, so the case's own condition is satisfied.",
+          "Supplied or restated: the CCO owner, 92% target, September 2026 CRM decision, fee model under review, the review after the business cases, a register entry and heat-map score for each decision, the CCO-owned assumption, the appetite quote, no triggers, the quarterly report, and the value statement. I judged all of these restatements of the input.",
+          "Supplied or restated: \"one register entry and one heat-map score per decision\" is a faithful reading of \"a ... entry and a ... score for each\".",
+          "Invented: R4 states as fact that CRM execution is still under way (\"the decision is closed, but execution is not\", \"during delivery\"). The input says only that the decision was made in September 2026. This is an unlabeled claim about an event's status, so I counted it as an invented fact.",
+          "Not counted: \"may\" and \"likely\" hedges, Unknown labels, labeled inferences, and the candidate trigger and register entries marked as recommendations.",
+          "Borderline: \"Options, scope and assumptions are fixed before risk input arrives\" is a generalization from the review-after-business-case fact. I treated it as acceptable inference, not an invention."
+        ],
+        "reasoning": "The response meets the case's own requirement. It rates all nine capabilities, shows the three aggregation steps, and its Overall Assessment of Limited matches what the rule gives from its stated ratings. It fails the rule scored in every case, no invented facts, because it asserts that CRM execution is ongoing. The input says nothing about the CRM implementation's status. The slip is small and sits in a recommendation rationale, but it is stated as a fact of the organization, so the verdict is FAIL.",
+        "scorer_model_returned": "claude-sonnet-5-5"
+      }
+    }
+  }
+}

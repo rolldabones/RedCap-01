@@ -1,0 +1,19 @@
+Please assess our ERM with RedCap-01. All facts below are fictional (Marrowfield Foods, a fictional company).
+
+Objective: raise operating margin from 7% to 10% by December 2027 while keeping on-time-in-full delivery at or above 95%. Owner: the Chief Operating Officer. Success measures: operating margin, on-time-in-full rate, customer complaints per million units.
+
+Critical decisions: (1) consolidating two plants into one, decided in March 2026; (2) choosing a single packaging supplier, decided in May 2026; (3) the 2027 capital budget, due November 2026. For decision 1, the risk team presented a scenario analysis to the executive committee two weeks before the vote, and the committee added a six-month dual-running period because of it. For decision 2, procurement chose the supplier before the risk review; risk was consulted afterwards. Decision 3 has a risk review scheduled before the budget committee meets.
+
+Assumptions: the remaining plant can absorb 40% more volume (owner: VP Manufacturing, reviewed monthly against line utilization); packaging prices stay within 5% of the 2026 contract (owner: Head of Procurement, reviewed quarterly); no more than 3% of staff leave during consolidation (owner: HR Director, reviewed monthly).
+
+Uncertainty: three scenarios for consolidation: expected (utilization 85%), downside (utilization 97% with overtime, margin 8.5%), upside (utilization 80%, margin 10.5%). The interdependency between the single packaging supplier and plant consolidation is noted in the scenario pack.
+
+Risk appetite and decision boundaries: line utilization acceptable range up to 88%; warning threshold 90%; trigger 93% for two consecutive weeks; required action: the COO reopens the dual-running decision within five business days. Packaging price: acceptable up to 5% above contract; warning at 4%; trigger at 6%; required action: the Head of Procurement activates the qualified second supplier.
+
+Triggers: utilization and packaging price are monitored weekly in the operations dashboard by the Plant Controller and the Procurement Analyst; trigger breaches go automatically to the monthly operating review agenda.
+
+Operating rhythm: risk is a standing item in the annual strategy offsite, the budget cycle, the investment committee and the monthly operating review; the board risk committee receives a quarterly report.
+
+Ownership: objectives (COO), decisions (named executive per decision), assumptions (named above), triggers (Plant Controller, Procurement Analyst), actions (COO and Head of Procurement).
+
+Observable value: the dual-running period added because of the March scenario analysis avoided an estimated 3 weeks of lost deliveries when the new line underperformed in July 2026; the executive committee minutes record the change. Two board meetings in 2026 discussed scenarios rather than heat maps.

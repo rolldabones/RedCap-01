@@ -2,9 +2,9 @@
 
 **Objective-to-Risk Alignment Check**
 
-**Version 1.2.9 · 16 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of the rolldabones governance ecosystem · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.3.0 · 16 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of the rolldabones governance ecosystem · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 26 October 2026, KST):** Not accepted. Run T5 (18 October 2026) passed 10 of 12 cases; critical case T4 (no invented facts) failed, and T10 is an instrument defect (D2). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
+**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 16 November 2026, KST):** Not accepted. Run 20261116-R4 of block v1.3.0 passed 10 of 13 cases; critical case T4 (no invented facts) failed on one unlabeled inferred absence (defect D3, model behavior). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -16,7 +16,7 @@ A focused, evidence-oriented diagnostic for testing whether Enterprise Risk Mana
 
 ## Run it in three steps
 
-> **Not accepted.** The published block has not passed its own acceptance test. Its first logged run, T5 of 18 October 2026 (KST), left cases T4 and T10 open, and in T4 the block failed "Never invent facts": the model stated unsupported facts as current-state gaps. The block's nine-part default report is also not followed reliably (defect D2). Check every output against the evidence you supplied. See [`tests.md`](tests.md), Last run.
+> **Not accepted.** The published block has not passed its own acceptance test. In its logged run of 16 November 2026 (KST) it passed 10 of 13 cases; in critical case T4 the report stated, once, an absence the input does not state, as it did on a different line in each of the four runs that day (defect D3). The nine-part report and the Overall Assessment rule held in every run. Evaluations run and scored by AI are evidence, not a verdict: read every absence and every characterization a report states against the evidence you supplied, and own the outcome. See [`tests.md`](tests.md).
 
 1. Paste the fenced block in [`instructions.md`](instructions.md) into the system prompt, custom instructions or project instructions of any current assistant. There is no `reference.md`: the GPT's knowledge file was a copy of *From Guidance to Action* by the Committee of Sponsoring Organizations of the Treadway Commission (COSO), which this repository does not reproduce, so supply your own lawfully obtained copy if you have one.
 2. Give it the inputs it asks for (see How to use it below) or start from the fictional case in [`Example-Assessment.md`](Example-Assessment.md).
@@ -131,6 +131,8 @@ RedCap-01 uses a qualitative scale unless the user expressly requests another me
 | **Limited** | The capability is largely informal, episodic, artifact-led or disconnected from decisions. |
 | **Insufficient Evidence** | Available information does not support a reliable conclusion. |
 
+The block carries these definitions and derives the Overall Assessment from the nine ratings by a stated rule, shown step by step in the Executive Summary: Insufficient Evidence if Objectives or Decision linkage is, or if five or more capabilities are; otherwise the middle of the other ratings ordered Limited, Developing, Strong, Excellent (the lower middle when their number is even); never above the Decision linkage rating. The worked example in [`Example-Assessment.md`](Example-Assessment.md) applies it.
+
 RedCap-01 does not convert these ratings into a numerical maturity score by default. It avoids false precision and states uncertainty directly.
 
 ## Evidence discipline
@@ -237,7 +239,7 @@ See [`BUILD.md`](BUILD.md) for the design rationale, build history and limitatio
 
 ## Change control
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in [`tests.md`](tests.md). The block's first logged run, T5 on 18 October 2026 (KST) on `claude-opus-5-5`, passed 10 of 12 cases. It is not accepted, on open cases T4 and T10; Michael Paik reviewed the run on 19 October 2026 (KST) and concurs (`tests.md`, Last run; transcripts in [`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
+The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in [`tests.md`](tests.md). Block v1.3.0 was run on 16 November 2026 (KST) on `claude-opus-5-5`, scored by `claude-sonnet-5-5`, with the harness in [`tests/`](tests/prompt-runs/README.md), so the run can be repeated from this repository: 10 of 13 cases, not accepted on critical case T4; Michael Paik reviewed every sample and concurs ([`tests.md`](tests.md)). The run of 18 October 2026 on block v1.2.0 is kept as history ([`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
 
 ## Part of the ecosystem
 
@@ -260,7 +262,7 @@ Governing questions across the set:
 
 ## Repository structure
 
-The repository is flat; its one folder, `evidence/`, holds run records and is listed last because it sits behind the instruments.
+The instrument files are at the top level; `tests/` holds the suite, its harness and the run records, and `evidence/` the run record of 18 October 2026. Both are listed last because they sit behind the instruments.
 
 | File | What it holds |
 |---|---|
@@ -276,6 +278,9 @@ The repository is flat; its one folder, `evidence/`, holds run records and is li
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
 | [CITATION.cff](CITATION.cff) | Machine-readable citation |
 | [LICENSE.md](LICENSE.md) | CC BY-NC-SA 4.0 |
+| [tests/prompt-cases.md](tests/prompt-cases.md) | The thirteen cases, with literal run inputs |
+| [tests/run_prompt_cases.py](tests/run_prompt_cases.py) · [tests/score_prompt_cases.py](tests/score_prompt_cases.py) | The harness: runner and cross-model scorer |
+| [tests/prompt-runs/](tests/prompt-runs/README.md) | Transcripts, manifests and scores of the runs of 16 November 2026 |
 | [evidence/transcripts-2026-10-18-T5/](evidence/transcripts-2026-10-18-T5/README.md) | Run transcripts of 18 October 2026, copied byte for byte |
 
 ## Important limitations
@@ -327,7 +332,7 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.2.9
+**Version:** 1.3.0
 **Date:** 16 November 2026
 **Status:** Instrument; formerly a custom GPT (see Change control)
 **Method:** Objective-to-Risk Alignment Check
@@ -337,7 +342,7 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.2.9. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.3.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
