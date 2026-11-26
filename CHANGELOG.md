@@ -4,6 +4,15 @@ All notable changes to this repository. Versions follow semantic versioning. Pri
 
 ---
 
+## [1.3.1] - 2026-11-26
+
+Final release: the archived edition. On Michael Paik's ruling of 26 November 2026, recorded in [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md): the repository is archived in place as a dated edition and receives no corrections after this release. Prepared with Claude; reviewed and approved by Michael Paik.
+
+- **README:** the archive banner under the title, with the edition date, the version to cite and where the maintained work is. The acceptance line reads "Last test" and names the run, the date and both models; the status is unchanged, **Not accepted**, and known defect D3 stays as recorded. The line says where the results table, the run manifests and the transcripts are and that they are frozen at this tag. Change control and Status say the repository is archived.
+- **`CONTRIBUTING.md`:** a note that the repository takes no contributions.
+- Nothing is removed, renamed or moved. `instructions.md` (block v1.3.0), `tests.md`, the suite, the transcripts and every other file are unchanged byte for byte.
+- README masthead, Status block, How to Cite and `CITATION.cff` to v1.3.1.
+
 ## [1.3.0] - 2026-11-16
 
 Minor release: the instruction block, the worked example and the suite. The remediation session of 16 November 2026 (KST) for the improvement rotation's RedCap-01 slot (cycle 3, row 2), on Michael Paik's rulings R1 to R6 of that day and the rulings A, B, D, K, L and M made on the runs. Prepared with Claude; reviewed and approved by Michael Paik.

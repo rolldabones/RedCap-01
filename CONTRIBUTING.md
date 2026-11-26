@@ -1,5 +1,7 @@
 # CONTRIBUTING
 
+> **Archived on 26 November 2026.** This repository is read-only and takes no contributions. The text below is kept as it stood. See [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md).
+
 Thank you for your interest in RedCap-01.
 
 ## Purpose

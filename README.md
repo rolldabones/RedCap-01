@@ -1,10 +1,12 @@
 # RedCap-01
 
+> **Archived edition of 26 November 2026.** This repository is archived and read-only. It receives no corrections, legal ones included: verify every statement of law, regulation or standard against a current primary source before you rely on it. What I maintain, and why this repository is not part of it, is in [DISPOSITION.md](https://github.com/rolldabones/rolldabones/blob/main/DISPOSITION.md). Cite this edition as *RedCap-01*, v1.3.1 (26 November 2026). The license and [LICENSING.md](https://github.com/rolldabones/rolldabones/blob/main/LICENSING.md) still apply. Reach me at sonupaik@gmail.com. Its last test is stated under Last test below.
+
 **Objective-to-Risk Alignment Check**
 
-**Version 1.3.0 · 16 November 2026 · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of the rolldabones governance ecosystem · License: [CC BY-NC-SA 4.0](LICENSE.md)**
+**Version 1.3.1 · 26 November 2026 · Archived edition · Instrument, formerly the RedCap-01 custom GPT (retired 1 October 2026) · Instructions last verified against the GPT on 14 July 2026, before the conversion · Part of the rolldabones governance ecosystem · License: [CC BY-NC-SA 4.0](LICENSE.md)**
 
-**Acceptance status ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 16 November 2026, KST):** Not accepted. Run 20261116-R4 of block v1.3.0 passed 10 of 13 cases; critical case T4 (no invented facts) failed on one unlabeled inferred absence (defect D3, model behavior). The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
+**Last test, as this edition (v1.3.1) records it ([ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), 16 November 2026, KST):** Not accepted. Run 20261116-R4 of block v1.3.0, on `claude-opus-5-5` and scored by `claude-sonnet-5-5`, passed 10 of 13 cases; critical case T4 (no invented facts) failed on one unlabeled inferred absence (defect D3, model behavior). No later run exists and none will be made. The results table and the run manifests are in [`tests/prompt-runs/`](tests/prompt-runs/README.md); the transcripts are in this repository, under [`tests/prompt-runs/transcripts/`](tests/prompt-runs/transcripts/) and [`evidence/`](evidence/transcripts-2026-10-18-T5/README.md), frozen at tag v1.3.1; ask at sonupaik@gmail.com. The account's status table is in [ECOSYSTEM.md](https://github.com/rolldabones/rolldabones/blob/main/ECOSYSTEM.md#instrument-status).
 
 > **Retired 1 October 2026 (Korea Standard Time, KST).** The RedCap-01 custom GPT was retired on 1 October 2026 and converted to a private plug-in on the OpenAI platform. The instructions published in this repository are the text of record and suffice for anyone who wants to build their own. History and sources: [RETIREMENT.md](https://github.com/rolldabones/rolldabones/blob/main/RETIREMENT.md).
 
@@ -239,7 +241,7 @@ See [`BUILD.md`](BUILD.md) for the design rationale, build history and limitatio
 
 ## Change control
 
-The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in [`tests.md`](tests.md). Block v1.3.0 was run on 16 November 2026 (KST) on `claude-opus-5-5`, scored by `claude-sonnet-5-5`, with the harness in [`tests/`](tests/prompt-runs/README.md), so the run can be repeated from this repository: 10 of 13 cases, not accepted on critical case T4; Michael Paik reviewed every sample and concurs ([`tests.md`](tests.md)). The run of 18 October 2026 on block v1.2.0 is kept as history ([`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
+**From 26 November 2026 (v1.3.1) this repository is archived: the block does not change and no run is made.** What follows is the rule the block was kept under until then. The RedCap-01 GPT configuration is Locked as of 1 October 2026; the configuration as last deployed is archived in [CHANGELOG.md](CHANGELOG.md), in the entry that retired the GPT. Changes are made in [`instructions.md`](instructions.md) under this repository's version rule (Status, below). A changed block is accepted only after one logged run of the published instructions as a system prompt on a current frontier model that meets [ACCEPTANCE.md](https://github.com/rolldabones/rolldabones/blob/main/ACCEPTANCE.md), recorded in [`tests.md`](tests.md). Block v1.3.0 was run on 16 November 2026 (KST) on `claude-opus-5-5`, scored by `claude-sonnet-5-5`, with the harness in [`tests/`](tests/prompt-runs/README.md), so the run can be repeated from this repository: 10 of 13 cases, not accepted on critical case T4; Michael Paik reviewed every sample and concurs ([`tests.md`](tests.md)). The run of 18 October 2026 on block v1.2.0 is kept as history ([`evidence/transcripts-2026-10-18-T5/`](evidence/transcripts-2026-10-18-T5/README.md)).
 
 ## Part of the ecosystem
 
@@ -332,9 +334,9 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## Status
 
-**Version:** 1.3.0
-**Date:** 16 November 2026
-**Status:** Instrument; formerly a custom GPT (see Change control)
+**Version:** 1.3.1
+**Date:** 26 November 2026
+**Status:** Archived edition of 26 November 2026; an instrument, formerly a custom GPT (see Change control)
 **Method:** Objective-to-Risk Alignment Check
 **Ecosystem:** the rolldabones governance ecosystem; framework: GRCnext™
 **Compatibility:** grc-workbook, risk-informed-decision-making-prompt, RedCap-00
@@ -342,7 +344,7 @@ RedCap-01 is not affiliated with, sponsored by or endorsed by COSO or Crowe LLP.
 
 ## How to Cite
 
-> Paik, Son-U Michael. *RedCap-01*, v1.3.0. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
+> Paik, Son-U Michael. *RedCap-01*, v1.3.1. GRC Solutions Korea, 2026. https://github.com/rolldabones/RedCap-01
 
 A machine-readable citation is in [CITATION.cff](CITATION.cff).
 
